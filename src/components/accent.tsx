@@ -15,7 +15,7 @@ export function Accent({ text, className = "text-brand" }: { text: string; class
 
 const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-/** Highlights known terms (technologies, platforms) inside a paragraph, like the reference design's purple italics. */
+/** Highlights known terms (technologies, platforms) inside a paragraph, in the accent colour. */
 export function Emphasize({ text, terms }: { text: string; terms: string[] }): ReactNode {
   const list = terms.filter(Boolean).sort((a, b) => b.length - a.length);
   if (!list.length) return text;

@@ -5,57 +5,64 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /*
- * Design tokens — see DESIGN_SYSTEM.md. Purple night theme (default) + light variant.
- * --brand comes from content/site.json (accentColor, default #C770F0).
+ * Design tokens — see DESIGN_SYSTEM.md. Green → blue palette (Vietapp style): dark navy theme (default) + light variant.
+ * --brand comes from content/site.json (accentColor, default #13D95C); --brand-2 is the gradient's blue end.
  */
 :root {
-  --brand: #c770f0;
-  /* Darker accent on light backgrounds so purple text stays readable (AA). */
-  --brand-ink: color-mix(in oklab, var(--brand) 62%, #000);
+  --brand: #13d95c;
+  --brand-2: #2196df;
+  /* Decorative gradient (underlines, rings, borders). Too light for white text — buttons use --primary-gradient. */
+  --brand-gradient: linear-gradient(90deg, var(--brand), var(--brand-2));
+  /* Same hues, deep enough for white text (AA ≥ 4.5:1 at both ends). */
+  --primary-gradient: linear-gradient(90deg, #08843f, #1062dd);
+  /* Darker accent on light backgrounds so green text stays readable (AA). */
+  --brand-ink: color-mix(in oklab, var(--brand) 58%, #000);
   --brand-soft: color-mix(in oklab, var(--brand) 12%, white);
-  --background: #faf7fd;
-  --background-alt: #f3edfa;
-  --bg-gradient: linear-gradient(270deg, #faf7fd, #f1eafa);
-  --nav-scrolled: rgba(250, 247, 253, 0.8);
-  --footer: #ece4f6;
-  --foreground: #1d1430;
-  --secondary-foreground: #5d4f70;
-  --faint: #9d8fb0;
-  --border: #e3d7f1;
+  --background: #ffffff;
+  --background-alt: #f1f7f5;
+  --bg-gradient: linear-gradient(270deg, #ffffff, #eef8f3);
+  --nav-scrolled: rgba(255, 255, 255, 0.85);
+  --footer: #e8f4ef;
+  --foreground: #1d2939;
+  --secondary-foreground: #4f5662;
+  --faint: #667085;
+  --border: #dfe7ee;
   --card: #ffffff;
-  --primary: #623686;
+  --primary: #1062dd;
   --primary-foreground: #ffffff;
-  --hover: #efe6f8;
-  --glow: 0 4px 14px 0 rgba(119, 53, 136, 0.16);
-  --glow-strong: 0 6px 20px 2px rgba(129, 72, 144, 0.28);
-  --star: 120, 70, 170;
+  --hover: #eaf6f0;
+  --glow: 0 4px 14px 0 rgba(16, 98, 221, 0.1);
+  --glow-strong: 0 6px 20px 2px rgba(19, 160, 90, 0.22);
+  --star: 33, 150, 223;
   --radius: 0.75rem;
 }
 
 .dark {
   --brand-ink: var(--brand);
-  --brand-soft: color-mix(in oklab, var(--brand) 16%, #1b1429);
-  --background: #1b1429;
-  --background-alt: #211835;
-  --bg-gradient: linear-gradient(270deg, #1b1429, #140f23);
-  --nav-scrolled: rgba(27, 26, 46, 0.66);
-  --footer: #0a0416;
+  --brand-soft: color-mix(in oklab, var(--brand) 14%, #0b1620);
+  --background: #0b1620;
+  --background-alt: #0f1d2a;
+  --bg-gradient: linear-gradient(270deg, #0b1620, #08111a);
+  --nav-scrolled: rgba(11, 22, 32, 0.72);
+  --footer: #050c12;
   --foreground: #ffffff;
-  --secondary-foreground: #b9a9cf;
-  --faint: #7c6a92;
-  --border: #3a2a52;
-  --card: #170f26;
-  --primary: #623686;
+  --secondary-foreground: #a9bccb;
+  --faint: #7f97a8;
+  --border: #1f3444;
+  --card: #0d1b26;
+  --primary: #1062dd;
   --primary-foreground: #ffffff;
-  --hover: #2a2040;
-  --glow: 0 4px 5px 3px rgba(119, 53, 136, 0.46);
-  --glow-strong: 0 4px 4px 5px rgba(129, 72, 144, 0.56);
+  --hover: #15283a;
+  --glow: 0 4px 5px 3px rgba(33, 150, 223, 0.3);
+  --glow-strong: 0 4px 4px 5px rgba(19, 217, 92, 0.34);
   --star: 255, 255, 255;
 }
 
 @theme inline {
-  --font-sans: var(--font-mono-family), ui-monospace, monospace;
-  --font-mono: var(--font-mono-family), ui-monospace, monospace;
+  /* Vietapp pairing: Quicksand for text, Lexend for headings, bold text and small labels (there is no monospace). */
+  --font-sans: var(--font-body-family), system-ui, sans-serif;
+  --font-heading: var(--font-heading-family), system-ui, sans-serif;
+  --font-mono: var(--font-heading-family), ui-monospace, monospace;
   --color-brand: var(--brand-ink);
   --color-brand-raw: var(--brand);
   --color-brand-soft: var(--brand-soft);
@@ -95,9 +102,20 @@
   }
   body {
     @apply text-foreground antialiased;
+    font-weight: 500; /* Quicksand is thin at 400 */
     background-color: var(--background);
     background-image: var(--bg-gradient);
     background-attachment: fixed;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  b,
+  strong {
+    /* next/font variable directly: @theme inline tokens (--font-heading) are not emitted as CSS variables. */
+    font-family: var(--font-heading-family), system-ui, sans-serif;
   }
   ::selection {
     background: color-mix(in oklab, var(--brand) 35%, transparent);
@@ -117,7 +135,7 @@
     background: color-mix(in oklab, var(--brand) 22%, var(--background));
   }
   ::-webkit-scrollbar-thumb {
-    background: color-mix(in oklab, var(--brand) 85%, transparent);
+    background: linear-gradient(180deg, var(--brand), var(--brand-2));
     border-radius: 12px;
   }
 }
@@ -154,11 +172,16 @@
   }
 }
 
+/* Main call-to-action fill (Vietapp "Đăng ký" button): green → blue, white text. */
+@utility bg-primary-gradient {
+  background-image: var(--primary-gradient);
+}
+
 /* Pill used for skills and filters. */
 @utility tech-pill {
   border: 1.7px solid color-mix(in oklab, var(--brand) 60%, transparent);
   border-radius: 24px;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  box-shadow: 4px 5px 4px 3px rgba(16, 98, 221, 0.12);
   transition: transform 0.25s ease, outline-color 0.25s ease;
   &:hover {
     transform: scale(1.05);
@@ -222,7 +245,7 @@
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: var(--brand);
+  background: var(--brand-gradient);
   transition: width 0.3s ease-out;
 }
 .nav-underline:hover::after,
@@ -230,7 +253,7 @@
   width: 100%;
 }
 
-/* White social circle with a purple ring on hover. */
+/* White social circle with a green → blue ring on hover. */
 .social-circle {
   position: relative;
   display: inline-flex;
@@ -240,7 +263,7 @@
   height: 40px;
   border-radius: 9999px;
   background: rgba(255, 255, 255, 0.97);
-  color: #700c86;
+  color: #08843f;
   transition: 0.5s;
   /* No z-index here: the ring (::before, z-index -1) must sit behind the white disc, not on top of it. */
 }
@@ -249,18 +272,18 @@
   position: absolute;
   inset: 0;
   border-radius: 9999px;
-  background: #68187a;
+  background: var(--brand-gradient);
   transform: scale(0.9);
   transition: 0.5s;
   z-index: -1;
 }
 .social-circle:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
+  color: #1062dd;
+  box-shadow: 0 0 5px var(--brand-2);
 }
 .social-circle:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px color-mix(in oklab, var(--brand) 70%, transparent);
 }
 
 /* Case study markdown */

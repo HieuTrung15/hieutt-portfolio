@@ -24,10 +24,10 @@ export function ProjectCard({
   return (
     <article className={cn("glow-card glow-card-hover flex min-w-0 flex-col px-6 pt-7 pb-6 opacity-95", className)}>
       <div aria-hidden className="mx-auto w-[90%]">
-        <div className="overflow-hidden rounded-t-lg border-[6px] border-b-0 border-[#2d2440] bg-[#120c1f]">
+        <div className="overflow-hidden rounded-t-lg border-[6px] border-b-0 border-[#1f2c38] bg-[#0b141c]">
           <ProjectVisual slug={p.slug} caption={p.category} labels={p.labels} className="rounded-none border-0" />
         </div>
-        <div className="-mx-[7%] h-2.5 rounded-b-lg bg-[#2d2440]" />
+        <div className="-mx-[7%] h-2.5 rounded-b-lg bg-[#1f2c38]" />
       </div>
       <Heading className="mt-7 text-center text-[1.35rem] font-medium">{p.shortTitle}</Heading>
       <p className="mt-1 text-center text-xs text-muted-foreground">{[p.organization, p.period].filter(Boolean).join(" · ")}</p>
@@ -44,7 +44,7 @@ export function ProjectCard({
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
         <Link
           href={p.href}
-          className="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-primary-foreground transition-colors hover:bg-[#6d20c5d7]"
+          className="inline-flex items-center gap-2 rounded-md bg-primary bg-primary-gradient px-4 py-2 text-primary-foreground transition hover:brightness-110"
         >
           <MonitorPlay className="size-4" aria-hidden />
           {dict.caseStudy}

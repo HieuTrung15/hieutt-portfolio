@@ -6,7 +6,7 @@ export const initials = (name: string) => {
   return (words[0][0] + (words.length > 1 ? words[words.length - 1][0] : "")).toUpperCase();
 };
 
-/** Profile photo if configured, otherwise initials on a purple disc. */
+/** Profile photo if configured, otherwise initials on the green → blue gradient disc. */
 export function Avatar({ c, size = 44, className }: { c: Content; size?: number; className?: string }) {
   const { profile } = c;
   return profile.avatar ? (
@@ -15,7 +15,7 @@ export function Avatar({ c, size = 44, className }: { c: Content; size?: number;
   ) : (
     <span
       aria-hidden
-      className={cn("inline-flex shrink-0 items-center justify-center rounded-full bg-[#8e44ad] font-bold text-white", className)}
+      className={cn("inline-flex shrink-0 items-center justify-center rounded-full bg-primary bg-primary-gradient font-bold text-white", className)}
       style={{ width: size, height: size, fontSize: size * 0.36 }}
     >
       {initials(profile.name)}

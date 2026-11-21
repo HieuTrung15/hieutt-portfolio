@@ -20,7 +20,7 @@ export function resumeMetadata(locale: Locale): Metadata {
   };
 }
 
-const ACCENT = "#e8336d";
+const ACCENT = "#08843f";
 
 /** Section title styled like a typeset CV: first letters in the accent colour, rule to the right. */
 function PaperSection({ title, children }: { title: string; children: ReactNode }) {

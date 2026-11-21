@@ -2,7 +2,7 @@
 
 Portfolio cá nhân của **Trần Trung Hiếu** — ERPNext Developer & Enterprise Software Engineer.
 
-Website tĩnh (static export), giao diện tối tím có nền sao (theo phong cách soumyajit.vercel.app, xem DESIGN_SYSTEM.md), **song ngữ English (US, mặc định) / Tiếng Việt**, kèm **HieuTT Content Studio** để cập nhật nội dung bằng form trên máy local mà không sửa code giao diện.
+Website tĩnh (static export), giao diện tông xanh lá → xanh dương với font Lexend + Quicksand (theo vietapp.vn), bản tối nền navy có sao (bố cục theo soumyajit.vercel.app; xem DESIGN_SYSTEM.md), **song ngữ English (US, mặc định) / Tiếng Việt**, kèm **HieuTT Content Studio** để cập nhật nội dung bằng form trên máy local mà không sửa code giao diện.
 
 - Hướng dẫn cập nhật nội dung: [CONTENT_MANAGEMENT.md](CONTENT_MANAGEMENT.md)
 - Hệ thống thiết kế: [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md)

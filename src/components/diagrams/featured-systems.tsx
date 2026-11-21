@@ -42,7 +42,7 @@ export function FeaturedSystems({ systems }: { systems: FeaturedSystem[] }) {
               onClick={() => setIndex(i)}
               className={cn(
                 "cursor-pointer rounded-full px-4 py-1.5 text-sm whitespace-nowrap transition-colors",
-                i === index ? "bg-primary font-medium text-primary-foreground" : "text-muted-foreground hover:text-foreground",
+                i === index ? "bg-primary bg-primary-gradient font-medium text-primary-foreground" : "text-muted-foreground hover:text-foreground",
               )}
             >
               {s.name}

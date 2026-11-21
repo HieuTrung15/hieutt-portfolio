@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Lexend, Quicksand } from "next/font/google";
 import type { CSSProperties, ReactNode } from "react";
 
 import { Providers } from "@/components/providers";
@@ -8,8 +8,9 @@ import { DEFAULT_LOCALE, LOCALE_INFO, localeBootScript } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 import "./globals.css";
 
-// One variable monospace family for the whole site (Vietnamese glyphs included).
-const mono = JetBrains_Mono({ subsets: ["latin", "latin-ext", "vietnamese"], variable: "--font-mono-family", display: "swap" });
+// Vietapp pairing (variable fonts, Vietnamese glyphs included): Quicksand for text, Lexend for headings.
+const body = Quicksand({ subsets: ["latin", "latin-ext", "vietnamese"], variable: "--font-body-family", display: "swap" });
+const heading = Lexend({ subsets: ["latin", "latin-ext", "vietnamese"], variable: "--font-heading-family", display: "swap" });
 
 // Pages outside the language layouts (404) still need absolute social image URLs.
 export function generateMetadata(): Metadata {
@@ -19,8 +20,8 @@ export function generateMetadata(): Metadata {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#1b1429" },
-    { media: "(prefers-color-scheme: dark)", color: "#1b1429" },
+    { media: "(prefers-color-scheme: light)", color: "#0b1620" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b1620" },
   ],
 };
 
@@ -38,7 +39,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
         {/* Root layout is server-rendered once and never re-created on client navigation, so this runs only on full loads. */}
         <script dangerouslySetInnerHTML={{ __html: localeBootScript() }} />
       </head>
-      <body className={cn(mono.variable, "min-h-dvh font-sans")}>
+      <body className={cn(body.variable, heading.variable, "min-h-dvh font-sans")}>
         <Providers>{children}</Providers>
       </body>
     </html>
