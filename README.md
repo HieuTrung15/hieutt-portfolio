@@ -167,7 +167,14 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/pages/p
   --data '{"name":"henry-tran.is-a.dev"}'
 ```
 
-Cập nhật nội dung sau này: sửa bằng Studio → `pnpm run deploy:cloudflare`.
+**4. CI/CD (GitHub Actions)**: mỗi lần push lên `main`, [.github/workflows/deploy.yml](.github/workflows/deploy.yml) chạy `pnpm build`, `typecheck`, `lint`, `test` rồi `wrangler pages deploy`. Bước nào lỗi thì dừng, website giữ nguyên bản cũ. Repo cần 2 secret (Settings › Secrets and variables › Actions):
+
+| Secret | Giá trị |
+| --- | --- |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare › My Profile › API Tokens › Create Token › Custom token, quyền **Account › Cloudflare Pages › Edit** |
+| `CLOUDFLARE_ACCOUNT_ID` | ID tài khoản (Workers & Pages › Overview, cột bên phải) |
+
+Cập nhật nội dung sau này: sửa bằng Studio → commit → `git push`. Vẫn có thể deploy tay từ máy bằng `pnpm run deploy:cloudflare`.
 
 ### Vercel
 
