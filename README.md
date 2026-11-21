@@ -171,7 +171,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/pages/p
 
 | Secret | Giá trị |
 | --- | --- |
-| `CLOUDFLARE_API_TOKEN` | Cloudflare › My Profile › API Tokens › Create Token › Custom token, quyền **Account › Cloudflare Pages › Edit** |
+| `CLOUDFLARE_API_TOKEN_PORTFOLIO` | Cloudflare › My Profile › API Tokens › Create Token › Custom token, quyền **Account › Cloudflare Pages › Edit** |
 | `CLOUDFLARE_ACCOUNT_ID` | ID tài khoản (Workers & Pages › Overview, cột bên phải) |
 
 Cập nhật nội dung sau này: sửa bằng Studio → commit → `git push`. Vẫn có thể deploy tay từ máy bằng `pnpm run deploy:cloudflare`.
