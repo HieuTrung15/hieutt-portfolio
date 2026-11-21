@@ -167,7 +167,7 @@ curl -X POST "https://api.cloudflare.com/client/v4/accounts/<ACCOUNT_ID>/pages/p
   --data '{"name":"henry-tran.is-a.dev"}'
 ```
 
-**4. CI/CD (GitHub Actions)**: mỗi lần push lên `main`, [.github/workflows/deploy.yml](.github/workflows/deploy.yml) chạy `pnpm build`, `typecheck`, `lint`, `test` rồi `wrangler pages deploy`. Bước nào lỗi thì dừng, website giữ nguyên bản cũ. Repo cần 2 secret (Settings › Secrets and variables › Actions):
+**4. CI/CD (GitHub Actions)** (hướng dẫn từng bước từ đầu: [docs/DEPLOY.md](docs/DEPLOY.md)): mỗi lần push lên `main`, [.github/workflows/deploy.yml](.github/workflows/deploy.yml) chạy `pnpm build`, `typecheck`, `lint`, `test` rồi `wrangler pages deploy`. Bước nào lỗi thì dừng, website giữ nguyên bản cũ. Repo cần 2 secret (Settings › Secrets and variables › Actions):
 
 | Secret | Giá trị |
 | --- | --- |
