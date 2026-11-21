@@ -1,0 +1,562 @@
+{
+  "slug": "helencare",
+  "title": "Helencare ERP — Integrated Business Management",
+  "shortTitle": "Helencare ERP",
+  "status": "published",
+  "featured": true,
+  "order": 3,
+  "organization": {
+    "en": "Lotusa",
+    "vi": "Lotusa"
+  },
+  "industry": {
+    "en": "Manufacturing",
+    "vi": "Sản xuất"
+  },
+  "role": "ERPNext Developer",
+  "start": "2022-01",
+  "end": "2023-07",
+  "category": "Manufacturing / Enterprise Management",
+  "categories": [
+    "erp",
+    "manufacturing",
+    "inventory",
+    "hrm",
+    "integration"
+  ],
+  "summary": {
+    "en": "ERPNext implementation for a manufacturing organization of 400+ people: MRP, stock counts and inventory reconciliation, plus implementation project management.",
+    "vi": "Triển khai ERPNext cho tổ chức sản xuất hơn 400 nhân sự: MRP, kiểm kê và đối chiếu tồn kho, cùng quản lý dự án triển khai."
+  },
+  "overview": {
+    "en": "Implemented and developed an integrated ERP system on ERPNext for a manufacturing organization, covering manufacturing, inventory, buying and selling, quality, HR, CRM and MRP.",
+    "vi": "Triển khai và phát triển hệ thống ERP tích hợp trên ERPNext cho một tổ chức sản xuất, bao phủ sản xuất, kho, mua bán hàng, chất lượng, nhân sự, CRM và MRP."
+  },
+  "technologies": [
+    "Python",
+    "ERPNext",
+    "MySQL",
+    "JavaScript",
+    "ReactJS"
+  ],
+  "skillIds": [
+    "erpnext",
+    "erp-modules",
+    "custom-reports",
+    "python",
+    "rest-api-integration",
+    "mysql",
+    "database-design",
+    "business-logic",
+    "javascript",
+    "reactjs",
+    "manufacturing",
+    "mrp",
+    "inventory",
+    "purchasing",
+    "sales",
+    "crm",
+    "human-resources",
+    "quality-management",
+    "erp-implementation",
+    "technical-support"
+  ],
+  "responsibilities": [
+    {
+      "text": {
+        "en": "Managed the ERP implementation project.",
+        "vi": "Quản lý dự án triển khai ERP."
+      },
+      "type": "management"
+    },
+    {
+      "text": {
+        "en": "Developed and customized ERPNext; designed the database.",
+        "vi": "Phát triển và tùy chỉnh ERPNext; thiết kế database."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Built MRP features: calculating material requirements and determining purchasing needs.",
+        "vi": "Xây dựng chức năng MRP: tính toán nhu cầu nguyên vật liệu và xác định nhu cầu mua sắm."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Developed stock count reports and reconciled inventory between the ERP and physical stock.",
+        "vi": "Phát triển báo cáo kiểm kê kho và đối chiếu tồn kho giữa ERP với thực tế."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Customized Sales, Purchasing, CRM and HR features.",
+        "vi": "Tùy chỉnh các chức năng Sales, Purchasing, CRM và HR."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Integrated APIs with the mobile app.",
+        "vi": "Tích hợp API với ứng dụng di động."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Supported users during operations.",
+        "vi": "Hỗ trợ người dùng trong quá trình vận hành."
+      },
+      "type": "operations"
+    }
+  ],
+  "modules": [
+    {
+      "name": "Material Requirements Planning",
+      "items": {
+        "en": [
+          "Material requirements calculation",
+          "Purchasing needs determination"
+        ],
+        "vi": [
+          "Tính toán nhu cầu nguyên vật liệu",
+          "Xác định nhu cầu mua sắm"
+        ]
+      }
+    },
+    {
+      "name": "Inventory",
+      "items": {
+        "en": [
+          "Stock count reports",
+          "Reconciling ERP inventory with physical stock"
+        ],
+        "vi": [
+          "Báo cáo kiểm kê kho",
+          "Đối chiếu tồn kho giữa ERP và thực tế"
+        ]
+      }
+    },
+    {
+      "name": "Selling",
+      "items": {
+        "en": [
+          "Sales feature customization"
+        ],
+        "vi": [
+          "Tùy chỉnh chức năng Sales"
+        ]
+      }
+    },
+    {
+      "name": "Buying",
+      "items": {
+        "en": [
+          "Purchasing feature customization"
+        ],
+        "vi": [
+          "Tùy chỉnh chức năng Purchasing"
+        ]
+      }
+    },
+    {
+      "name": "CRM",
+      "items": {
+        "en": [
+          "CRM customization"
+        ],
+        "vi": [
+          "Tùy chỉnh CRM"
+        ]
+      }
+    },
+    {
+      "name": "Human Resources",
+      "items": {
+        "en": [
+          "HR customization"
+        ],
+        "vi": [
+          "Tùy chỉnh HR"
+        ]
+      }
+    },
+    {
+      "name": "Manufacturing",
+      "items": {
+        "en": [],
+        "vi": []
+      }
+    },
+    {
+      "name": "Quality Management",
+      "items": {
+        "en": [],
+        "vi": []
+      }
+    }
+  ],
+  "contributions": [
+    {
+      "label": {
+        "en": "Organization size",
+        "vi": "Quy mô tổ chức"
+      },
+      "value": {
+        "en": "A manufacturing organization of 400+ people (organization headcount, not system users).",
+        "vi": "Tổ chức sản xuất hơn 400 nhân sự (quy mô tổ chức, không phải số người dùng hệ thống)."
+      }
+    },
+    {
+      "label": {
+        "en": "Implementation timeline",
+        "vi": "Thời gian triển khai"
+      },
+      "value": {
+        "en": "15 months.",
+        "vi": "15 tháng."
+      }
+    },
+    {
+      "label": {
+        "en": "Implemented modules",
+        "vi": "Phân hệ triển khai"
+      },
+      "value": {
+        "en": "Manufacturing, Inventory, Selling, Buying, Quality Management, Human Resources, CRM and MRP.",
+        "vi": "Manufacturing, Inventory, Selling, Buying, Quality Management, Human Resources, CRM và MRP."
+      }
+    },
+    {
+      "label": {
+        "en": "Features built",
+        "vi": "Chức năng đã xây dựng"
+      },
+      "value": {
+        "en": "MRP for material and purchasing requirements; stock count and inventory reconciliation reports.",
+        "vi": "MRP tính nhu cầu nguyên vật liệu và nhu cầu mua sắm; báo cáo kiểm kê và đối chiếu tồn kho."
+      }
+    },
+    {
+      "label": {
+        "en": "Integrated systems",
+        "vi": "Hệ thống đã tích hợp"
+      },
+      "value": {
+        "en": "APIs with the mobile app.",
+        "vi": "API với ứng dụng di động."
+      }
+    },
+    {
+      "label": {
+        "en": "Scope of involvement",
+        "vi": "Phạm vi tham gia"
+      },
+      "value": {
+        "en": "Implementation project management, feature development and user support.",
+        "vi": "Quản lý dự án triển khai, phát triển chức năng và hỗ trợ người dùng."
+      }
+    }
+  ],
+  "gallery": [],
+  "diagram": {
+    "kind": "conceptual",
+    "title": {
+      "en": "Helencare ERP module scope",
+      "vi": "Phạm vi phân hệ Helencare ERP"
+    },
+    "nodes": [
+      {
+        "id": "crm",
+        "label": "CRM",
+        "icon": "handshake",
+        "x": 10,
+        "y": 18,
+        "description": {
+          "en": "Customer relationship management.",
+          "vi": "Quản lý quan hệ khách hàng."
+        },
+        "technologies": [
+          "ERPNext"
+        ],
+        "responsibilities": {
+          "en": [
+            "CRM customization"
+          ],
+          "vi": [
+            "Tùy chỉnh CRM"
+          ]
+        }
+      },
+      {
+        "id": "sales",
+        "label": "Selling",
+        "icon": "cart",
+        "x": 34,
+        "y": 18,
+        "description": {
+          "en": "Sales operations.",
+          "vi": "Nghiệp vụ bán hàng."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Sales feature customization"
+          ],
+          "vi": [
+            "Tùy chỉnh chức năng Sales"
+          ]
+        }
+      },
+      {
+        "id": "mrp",
+        "label": "MRP",
+        "icon": "calculator",
+        "x": 58,
+        "y": 18,
+        "description": {
+          "en": "Material requirements planning.",
+          "vi": "Hoạch định nhu cầu nguyên vật liệu."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Material requirements calculation",
+            "Purchasing needs determination"
+          ],
+          "vi": [
+            "Tính toán nhu cầu nguyên vật liệu",
+            "Xác định nhu cầu mua sắm"
+          ]
+        }
+      },
+      {
+        "id": "buying",
+        "label": "Buying",
+        "icon": "clipboard",
+        "x": 84,
+        "y": 18,
+        "description": {
+          "en": "Purchasing operations.",
+          "vi": "Nghiệp vụ mua hàng."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Purchasing feature customization"
+          ],
+          "vi": [
+            "Tùy chỉnh chức năng Purchasing"
+          ]
+        }
+      },
+      {
+        "id": "inventory",
+        "label": "Inventory",
+        "icon": "warehouse",
+        "x": 84,
+        "y": 82,
+        "description": {
+          "en": "Inventory management, stock counts and reconciliation.",
+          "vi": "Quản lý kho, kiểm kê và đối chiếu tồn kho."
+        },
+        "technologies": [
+          "ERPNext",
+          "MySQL"
+        ],
+        "responsibilities": {
+          "en": [
+            "Stock count reports",
+            "Reconciling ERP inventory with physical stock"
+          ],
+          "vi": [
+            "Báo cáo kiểm kê kho",
+            "Đối chiếu tồn kho giữa ERP và thực tế"
+          ]
+        }
+      },
+      {
+        "id": "manufacturing",
+        "label": "Manufacturing",
+        "icon": "factory",
+        "x": 58,
+        "y": 82,
+        "description": {
+          "en": "Manufacturing module.",
+          "vi": "Phân hệ sản xuất."
+        },
+        "technologies": [
+          "ERPNext"
+        ],
+        "responsibilities": {
+          "en": [],
+          "vi": []
+        }
+      },
+      {
+        "id": "quality",
+        "label": "Quality Management",
+        "icon": "shield",
+        "x": 34,
+        "y": 82,
+        "description": {
+          "en": "Quality management module.",
+          "vi": "Phân hệ quản lý chất lượng."
+        },
+        "technologies": [
+          "ERPNext"
+        ],
+        "responsibilities": {
+          "en": [],
+          "vi": []
+        }
+      },
+      {
+        "id": "hr",
+        "label": "Human Resources",
+        "icon": "users",
+        "x": 10,
+        "y": 82,
+        "description": {
+          "en": "Human resources module.",
+          "vi": "Phân hệ nhân sự."
+        },
+        "technologies": [
+          "ERPNext"
+        ],
+        "responsibilities": {
+          "en": [
+            "HR customization"
+          ],
+          "vi": [
+            "Tùy chỉnh HR"
+          ]
+        }
+      },
+      {
+        "id": "core",
+        "label": "ERPNext Core",
+        "icon": "database",
+        "x": 22,
+        "y": 50,
+        "description": {
+          "en": "Customized ERPNext platform and the database designed for the system.",
+          "vi": "Nền tảng ERPNext được tùy chỉnh và database thiết kế cho hệ thống."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python",
+          "MySQL"
+        ],
+        "responsibilities": {
+          "en": [
+            "Developing and customizing ERPNext",
+            "Database design",
+            "Supporting users in operations"
+          ],
+          "vi": [
+            "Phát triển và tùy chỉnh ERPNext",
+            "Thiết kế Database",
+            "Hỗ trợ người dùng vận hành"
+          ]
+        }
+      },
+      {
+        "id": "mobile",
+        "label": "Mobile App API",
+        "icon": "smartphone",
+        "x": 46,
+        "y": 50,
+        "description": {
+          "en": "API integration between the ERP and the mobile app.",
+          "vi": "Tích hợp API giữa ERP và ứng dụng di động."
+        },
+        "technologies": [
+          "Python",
+          "ERPNext"
+        ],
+        "responsibilities": {
+          "en": [
+            "API integration with the mobile app"
+          ],
+          "vi": [
+            "Tích hợp API với Mobile App"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "crm",
+        "to": "sales"
+      },
+      {
+        "from": "sales",
+        "to": "mrp",
+        "label": {
+          "en": "Demand",
+          "vi": "Nhu cầu"
+        }
+      },
+      {
+        "from": "mrp",
+        "to": "buying",
+        "label": {
+          "en": "Purchasing needs",
+          "vi": "Nhu cầu mua sắm"
+        }
+      },
+      {
+        "from": "buying",
+        "to": "inventory",
+        "label": {
+          "en": "Goods receipt",
+          "vi": "Nhập kho"
+        }
+      },
+      {
+        "from": "mrp",
+        "to": "manufacturing",
+        "label": {
+          "en": "Material plan",
+          "vi": "Kế hoạch NVL"
+        }
+      },
+      {
+        "from": "inventory",
+        "to": "manufacturing",
+        "label": {
+          "en": "Material issue",
+          "vi": "Cấp vật tư"
+        }
+      },
+      {
+        "from": "manufacturing",
+        "to": "quality"
+      },
+      {
+        "from": "core",
+        "to": "hr"
+      },
+      {
+        "from": "core",
+        "to": "mobile",
+        "label": {
+          "en": "API",
+          "vi": "API"
+        }
+      }
+    ]
+  }
+}

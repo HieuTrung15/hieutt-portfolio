@@ -1,0 +1,4 @@
+# Cloudflare Pages: direct upload of the static export in out/ (see README › Triển khai › Cloudflare Pages).
+name = "henry-tran"
+pages_build_output_dir = "./out"
+compatibility_date = "2026-11-01"

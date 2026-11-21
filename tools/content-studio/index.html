@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="studio-token" content="__STUDIO_TOKEN__" />
+    <title>HieuTT Content Studio</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="/studio.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand"><strong>HieuTT</strong> Content Studio</div>
+      <span id="dirty" class="dirty" hidden>● Có thay đổi chưa lưu</span>
+      <div class="actions">
+        <button id="btn-validate" type="button">Kiểm tra</button>
+        <button id="btn-revert" type="button">Hoàn tác</button>
+        <button id="btn-export" type="button">Xuất backup</button>
+        <button id="btn-save" type="button" class="primary">Lưu vào file</button>
+      </div>
+    </header>
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <div class="layout">
+      <nav id="tabs" class="tabs" aria-label="Nhóm nội dung"></nav>
+      <main id="editor" class="editor"><p class="muted">Đang tải nội dung…</p></main>
+      <aside class="preview" aria-label="Xem trước">
+        <div class="preview-tabs" role="tablist">
+          <button id="pv-site" type="button" role="tab" aria-selected="true">Website (dev)</button>
+          <button id="pv-md" type="button" role="tab" aria-selected="false">Case study</button>
+          <span class="pv-lang" role="group" aria-label="Ngôn ngữ xem trước">
+            <button id="pv-lang-en" type="button" aria-pressed="true">EN</button>
+            <button id="pv-lang-vi" type="button" aria-pressed="false">VI</button>
+          </span>
+          <a id="pv-open" href="http://127.0.0.1:3000" target="_blank" rel="noopener">Mở tab mới ↗</a>
+        </div>
+        <div id="pv-site-panel" class="pv-panel">
+          <iframe id="site-frame" title="Xem trước website" src="http://127.0.0.1:3000/"></iframe>
+          <p class="hint">Hiển thị dữ liệu <b>đã lưu</b>. Dự án <code>draft</code> chỉ xuất hiện ở bản dev. Tiếng Anh ở <code>/</code>, tiếng Việt ở <code>/vi</code>.</p>
+        </div>
+        <div id="pv-md-panel" class="pv-panel" hidden>
+          <div id="md-preview" class="md"></div>
+        </div>
+      </aside>
+    </div>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

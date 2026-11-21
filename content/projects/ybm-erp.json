@@ -1,0 +1,27 @@
+{
+  "slug": "ybm-erp",
+  "title": "YBM ERP",
+  "shortTitle": "YBM ERP",
+  "status": "published",
+  "featured": false,
+  "order": 5,
+  "organization": {
+    "en": "NXCOM",
+    "vi": "NXCOM"
+  },
+  "role": "ERPNext Consultant",
+  "category": "ERP",
+  "categories": [
+    "erp"
+  ],
+  "summary": {
+    "en": "An ERP project during my time as an ERPNext Consultant at NXCOM. A detailed description is coming soon.",
+    "vi": "Dự án ERP trong giai đoạn làm ERPNext Consultant tại NXCOM. Mô tả chi tiết đang được bổ sung."
+  },
+  "technologies": [],
+  "skillIds": [],
+  "responsibilities": [],
+  "modules": [],
+  "contributions": [],
+  "gallery": []
+}

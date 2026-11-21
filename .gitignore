@@ -1,0 +1,32 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# content studio backups (local safety copies, not content)
+/.studio-backups/
+
+# cloudflare wrangler local state
+/.wrangler/
+
+# local working notes, not part of the site
+/PROMPT.md
+/tổng kết.md
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+pnpm-debug.log*
+
+# env
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel

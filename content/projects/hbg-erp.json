@@ -1,0 +1,315 @@
+{
+  "slug": "hbg-erp",
+  "title": "HBG ERP",
+  "shortTitle": "HBG ERP",
+  "status": "published",
+  "featured": false,
+  "order": 4,
+  "organization": {
+    "en": "BnK Solution",
+    "vi": "BnK Solution"
+  },
+  "role": "Developer",
+  "start": "2021-01",
+  "end": "2022-01",
+  "category": "Odoo ERP",
+  "categories": [
+    "erp",
+    "hrm"
+  ],
+  "summary": {
+    "en": "Odoo development for CRM, multi-company HR, Sales Orders and Point of Sale; automation scripts and system maintenance.",
+    "vi": "Phát triển chức năng Odoo cho CRM, nhân sự đa công ty, Sales Order và Point of Sale; script tự động hóa và bảo trì hệ thống."
+  },
+  "overview": {
+    "en": "Developed, maintained and upgraded an ERP system on the Odoo platform.",
+    "vi": "Phát triển, bảo trì và nâng cấp hệ thống ERP trên nền tảng Odoo."
+  },
+  "technologies": [
+    "Python",
+    "Odoo",
+    "PostgreSQL",
+    "JavaScript"
+  ],
+  "skillIds": [
+    "odoo",
+    "erp-modules",
+    "python",
+    "postgresql",
+    "automation",
+    "javascript",
+    "sales",
+    "crm",
+    "human-resources",
+    "maintenance",
+    "technical-support"
+  ],
+  "responsibilities": [
+    {
+      "text": {
+        "en": "Developed Odoo features for CRM, HR, Sales Orders and Point of Sale.",
+        "vi": "Phát triển chức năng Odoo cho CRM, HR, Sales Order và Point of Sale."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Developed multi-company HR management.",
+        "vi": "Phát triển quản lý nhân sự đa công ty (multi-company HR)."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Wrote automation scripts.",
+        "vi": "Viết script tự động hóa."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Supported operations, maintenance and system upgrades.",
+        "vi": "Hỗ trợ vận hành, bảo trì và nâng cấp hệ thống."
+      },
+      "type": "operations"
+    }
+  ],
+  "modules": [
+    {
+      "name": "CRM",
+      "items": {
+        "en": [],
+        "vi": []
+      }
+    },
+    {
+      "name": "Human Resources",
+      "items": {
+        "en": [
+          "Multi-company HR management"
+        ],
+        "vi": [
+          "Multi-company HR management"
+        ]
+      }
+    },
+    {
+      "name": "Sales Order",
+      "items": {
+        "en": [],
+        "vi": []
+      }
+    },
+    {
+      "name": "Point of Sale",
+      "items": {
+        "en": [],
+        "vi": []
+      }
+    }
+  ],
+  "contributions": [
+    {
+      "label": {
+        "en": "Platform",
+        "vi": "Nền tảng"
+      },
+      "value": {
+        "en": "Odoo.",
+        "vi": "Odoo."
+      }
+    },
+    {
+      "label": {
+        "en": "Modules developed",
+        "vi": "Phân hệ đã phát triển"
+      },
+      "value": {
+        "en": "CRM, HR (multi-company), Sales Orders and Point of Sale.",
+        "vi": "CRM, HR (đa công ty), Sales Order và Point of Sale."
+      }
+    },
+    {
+      "label": {
+        "en": "Scope of involvement",
+        "vi": "Phạm vi tham gia"
+      },
+      "value": {
+        "en": "Feature development, automation scripts, operations support, maintenance and upgrades.",
+        "vi": "Phát triển chức năng, script tự động hóa, hỗ trợ vận hành, bảo trì và nâng cấp."
+      }
+    }
+  ],
+  "gallery": [],
+  "diagram": {
+    "kind": "conceptual",
+    "title": {
+      "en": "HBG ERP functional scope",
+      "vi": "Phạm vi chức năng HBG ERP"
+    },
+    "nodes": [
+      {
+        "id": "odoo",
+        "label": "Odoo Platform",
+        "icon": "server",
+        "x": 50,
+        "y": 50,
+        "description": {
+          "en": "ERP system on the Odoo platform.",
+          "vi": "Hệ thống ERP trên nền tảng Odoo."
+        },
+        "technologies": [
+          "Odoo",
+          "Python",
+          "PostgreSQL"
+        ],
+        "responsibilities": {
+          "en": [
+            "Operations support",
+            "System maintenance and upgrades"
+          ],
+          "vi": [
+            "Hỗ trợ vận hành",
+            "Bảo trì và nâng cấp hệ thống"
+          ]
+        }
+      },
+      {
+        "id": "crm",
+        "label": "CRM",
+        "icon": "handshake",
+        "x": 16,
+        "y": 22,
+        "description": {
+          "en": "Customer relationship management.",
+          "vi": "Quản lý quan hệ khách hàng."
+        },
+        "technologies": [
+          "Odoo",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "CRM feature development"
+          ],
+          "vi": [
+            "Phát triển chức năng CRM"
+          ]
+        }
+      },
+      {
+        "id": "sales",
+        "label": "Sales Order",
+        "icon": "cart",
+        "x": 84,
+        "y": 22,
+        "description": {
+          "en": "Sales orders.",
+          "vi": "Đơn bán hàng."
+        },
+        "technologies": [
+          "Odoo",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Sales Order feature development"
+          ],
+          "vi": [
+            "Phát triển chức năng Sales Order"
+          ]
+        }
+      },
+      {
+        "id": "pos",
+        "label": "Point of Sale",
+        "icon": "store",
+        "x": 84,
+        "y": 78,
+        "description": {
+          "en": "Point of sale.",
+          "vi": "Điểm bán hàng."
+        },
+        "technologies": [
+          "Odoo",
+          "JavaScript"
+        ],
+        "responsibilities": {
+          "en": [
+            "POS feature development"
+          ],
+          "vi": [
+            "Phát triển chức năng POS"
+          ]
+        }
+      },
+      {
+        "id": "hr",
+        "label": "HR · Multi-company",
+        "icon": "users",
+        "x": 16,
+        "y": 78,
+        "description": {
+          "en": "HR management across multiple companies.",
+          "vi": "Quản lý nhân sự cho nhiều công ty."
+        },
+        "technologies": [
+          "Odoo",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Multi-company HR management"
+          ],
+          "vi": [
+            "Multi-company HR management"
+          ]
+        }
+      },
+      {
+        "id": "automation",
+        "label": "Automation Scripts",
+        "icon": "workflow",
+        "x": 50,
+        "y": 12,
+        "description": {
+          "en": "Automation scripts.",
+          "vi": "Script tự động hóa."
+        },
+        "technologies": [
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Writing automation scripts"
+          ],
+          "vi": [
+            "Viết script tự động hóa"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "odoo",
+        "to": "crm"
+      },
+      {
+        "from": "odoo",
+        "to": "sales"
+      },
+      {
+        "from": "odoo",
+        "to": "pos"
+      },
+      {
+        "from": "odoo",
+        "to": "hr"
+      },
+      {
+        "from": "automation",
+        "to": "odoo"
+      }
+    ]
+  }
+}

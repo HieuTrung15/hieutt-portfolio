@@ -1,0 +1,3 @@
+EUP Group is an ERP project I worked on as an ERPNext Consultant at NXCOM Technology Joint Stock Company (July 2023 – August 2025). The system supports manufacturing, warehousing, purchasing and sales, and logistics.
+
+The work ranged from customizing standard ERPNext documents such as BOM, Work Order, Stock Entry and Purchase Receipt to building a new DocType for tracking shipments — both deliveries to customers and transport from suppliers to the warehouse. It also covered workflows, reports, print formats and email templates for day-to-day operations, along with data migration planning and user training.

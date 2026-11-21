@@ -1,0 +1,24 @@
+{
+  "slug": "hrmsnd",
+  "title": "HRMSND",
+  "shortTitle": "HRMSND",
+  "status": "published",
+  "featured": false,
+  "order": 6,
+  "organization": {
+    "en": "Vinatex",
+    "vi": "Vinatex"
+  },
+  "role": "ERPNext Developer",
+  "categories": [],
+  "summary": {
+    "en": "A project at Vietnam National Textile and Garment Group in my role as ERPNext Developer. A detailed description is coming soon.",
+    "vi": "Dự án tại Tập đoàn Dệt may Việt Nam trong vai trò ERPNext Developer. Mô tả chi tiết đang được bổ sung."
+  },
+  "technologies": [],
+  "skillIds": [],
+  "responsibilities": [],
+  "modules": [],
+  "contributions": [],
+  "gallery": []
+}

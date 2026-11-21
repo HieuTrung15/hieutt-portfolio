@@ -1,0 +1,3 @@
+EUP Group là dự án ERP tôi tham gia trong thời gian làm ERPNext Consultant tại Công ty Cổ phần Công nghệ NXCOM (07/2023 – 08/2025). Hệ thống phục vụ các hoạt động sản xuất, kho, mua bán hàng và logistics.
+
+Công việc trải dài từ tùy chỉnh các chứng từ chuẩn của ERPNext như BOM, Work Order, Stock Entry hay Purchase Receipt, đến xây dựng DocType mới để theo dõi quá trình vận chuyển hàng hóa — cả chiều giao hàng cho khách lẫn chiều vận chuyển từ nhà cung cấp về kho. Bên cạnh đó là workflow, báo cáo, mẫu in và mẫu email phục vụ vận hành hằng ngày, cùng với lập kế hoạch chuyển đổi dữ liệu và đào tạo người dùng.

@@ -1,0 +1,334 @@
+{
+  "slug": "vhrm",
+  "title": "VHRM — Enterprise Human Resource Management",
+  "shortTitle": "VHRM",
+  "status": "published",
+  "featured": true,
+  "order": 1,
+  "organization": {
+    "en": "Vietnam National Textile and Garment Group",
+    "vi": "Tập đoàn Dệt may Việt Nam"
+  },
+  "industry": {
+    "en": "Textile & Garment",
+    "vi": "Dệt may"
+  },
+  "role": "ERPNext Developer",
+  "start": "2025-08",
+  "end": null,
+  "category": "Enterprise HRM",
+  "categories": [
+    "erp",
+    "hrm",
+    "integration"
+  ],
+  "summary": {
+    "en": "Human resource management system for Vietnam National Textile and Garment Group on ERPNext: HRM features, E-Office, management dashboards and API integration.",
+    "vi": "Hệ thống quản trị nhân sự của Tập đoàn Dệt may Việt Nam trên ERPNext: chức năng HRM, E-Office, dashboard quản trị và tích hợp API."
+  },
+  "overview": {
+    "en": "Developing and customizing the human resource management system of Vietnam National Textile and Garment Group on the ERPNext platform.",
+    "vi": "Phát triển và tùy chỉnh hệ thống quản trị nhân sự của Tập đoàn Dệt may Việt Nam trên nền tảng ERPNext."
+  },
+  "technologies": [
+    "ERPNext",
+    "Frappe Framework",
+    "Python",
+    "JavaScript"
+  ],
+  "skillIds": [
+    "erpnext",
+    "frappe-framework",
+    "erp-modules",
+    "python",
+    "rest-api-integration",
+    "javascript",
+    "erp-interface-customization",
+    "management-dashboards",
+    "human-resources",
+    "system-administration",
+    "technical-support"
+  ],
+  "responsibilities": [
+    {
+      "text": {
+        "en": "Developing and customizing HR management features.",
+        "vi": "Phát triển và tùy chỉnh chức năng quản trị nhân sự."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Customizing the user interface.",
+        "vi": "Tùy chỉnh giao diện người dùng."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Upgrading and developing the internal E-Office system.",
+        "vi": "Nâng cấp và phát triển hệ thống E-Office nội bộ."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Designing management reporting dashboards.",
+        "vi": "Thiết kế các Dashboard báo cáo quản trị."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Integrating APIs between the ERP and external software.",
+        "vi": "Tích hợp API giữa ERP và phần mềm bên ngoài."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Contributing to mobile app development.",
+        "vi": "Tham gia phát triển ứng dụng di động."
+      },
+      "type": "team"
+    },
+    {
+      "text": {
+        "en": "Administering, operating and supporting system stability.",
+        "vi": "Quản trị, vận hành và hỗ trợ bảo đảm ổn định hệ thống."
+      },
+      "type": "operations"
+    }
+  ],
+  "modules": [],
+  "contributions": [
+    {
+      "label": {
+        "en": "Customized modules",
+        "vi": "Phân hệ đã tùy chỉnh"
+      },
+      "value": {
+        "en": "Human resource management (HRM) and the user interface on ERPNext.",
+        "vi": "Quản trị nhân sự (HRM) và giao diện người dùng trên ERPNext."
+      }
+    },
+    {
+      "label": {
+        "en": "Internal systems",
+        "vi": "Hệ thống nội bộ"
+      },
+      "value": {
+        "en": "Upgraded and developed the E-Office system.",
+        "vi": "Nâng cấp và phát triển E-Office."
+      }
+    },
+    {
+      "label": {
+        "en": "Management reporting",
+        "vi": "Báo cáo quản trị"
+      },
+      "value": {
+        "en": "Reporting dashboards for management.",
+        "vi": "Dashboard báo cáo phục vụ công tác quản lý."
+      }
+    },
+    {
+      "label": {
+        "en": "Integrated systems",
+        "vi": "Hệ thống đã tích hợp"
+      },
+      "value": {
+        "en": "APIs between the ERP and external software; contributed to the mobile app.",
+        "vi": "API giữa ERP và phần mềm bên ngoài; tham gia phát triển ứng dụng di động."
+      }
+    },
+    {
+      "label": {
+        "en": "Scope of involvement",
+        "vi": "Phạm vi tham gia"
+      },
+      "value": {
+        "en": "Development, integration, administration and operations.",
+        "vi": "Phát triển, tích hợp, quản trị và vận hành hệ thống."
+      }
+    }
+  ],
+  "gallery": [],
+  "diagram": {
+    "kind": "conceptual",
+    "title": {
+      "en": "VHRM functional scope",
+      "vi": "Phạm vi chức năng VHRM"
+    },
+    "nodes": [
+      {
+        "id": "hrm",
+        "label": "HRM Core",
+        "icon": "users",
+        "x": 50,
+        "y": 50,
+        "description": {
+          "en": "HR management features developed and customized on ERPNext.",
+          "vi": "Chức năng quản trị nhân sự được phát triển và tùy chỉnh trên ERPNext."
+        },
+        "technologies": [
+          "ERPNext",
+          "Frappe Framework",
+          "Python",
+          "JavaScript"
+        ],
+        "responsibilities": {
+          "en": [
+            "Developing and customizing HR management features",
+            "Customizing the user interface"
+          ],
+          "vi": [
+            "Phát triển và tùy chỉnh chức năng quản trị nhân sự",
+            "Tùy chỉnh giao diện người dùng"
+          ]
+        }
+      },
+      {
+        "id": "eoffice",
+        "label": "E-Office",
+        "icon": "file-text",
+        "x": 16,
+        "y": 22,
+        "description": {
+          "en": "Internal electronic office system.",
+          "vi": "Hệ thống văn phòng điện tử nội bộ."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Upgrading and developing the E-Office system"
+          ],
+          "vi": [
+            "Nâng cấp và phát triển hệ thống E-Office"
+          ]
+        }
+      },
+      {
+        "id": "dashboards",
+        "label": "Management Dashboards",
+        "icon": "dashboard",
+        "x": 84,
+        "y": 22,
+        "description": {
+          "en": "Reporting dashboards for management.",
+          "vi": "Dashboard báo cáo phục vụ quản trị."
+        },
+        "technologies": [
+          "ERPNext",
+          "JavaScript"
+        ],
+        "responsibilities": {
+          "en": [
+            "Designing management reporting dashboards"
+          ],
+          "vi": [
+            "Thiết kế dashboard báo cáo quản trị"
+          ]
+        }
+      },
+      {
+        "id": "api",
+        "label": "API Integration",
+        "icon": "plug",
+        "x": 84,
+        "y": 78,
+        "description": {
+          "en": "Connects the ERP with external software. Details of the connected systems are not disclosed.",
+          "vi": "Kết nối ERP với phần mềm bên ngoài. Chi tiết các hệ thống được kết nối không công bố."
+        },
+        "technologies": [
+          "Python",
+          "Frappe Framework"
+        ],
+        "responsibilities": {
+          "en": [
+            "Integrating APIs between the ERP and external software"
+          ],
+          "vi": [
+            "Tích hợp API giữa ERP và phần mềm bên ngoài"
+          ]
+        }
+      },
+      {
+        "id": "mobile",
+        "label": "Mobile App",
+        "icon": "smartphone",
+        "x": 16,
+        "y": 78,
+        "description": {
+          "en": "Mobile app — contributed as part of the team.",
+          "vi": "Ứng dụng di động — tham gia phát triển cùng nhóm."
+        },
+        "technologies": [],
+        "responsibilities": {
+          "en": [
+            "Contributing to mobile app development"
+          ],
+          "vi": [
+            "Tham gia phát triển ứng dụng di động"
+          ]
+        }
+      },
+      {
+        "id": "operations",
+        "label": "System Operations",
+        "icon": "shield",
+        "x": 50,
+        "y": 88,
+        "description": {
+          "en": "System administration and operations.",
+          "vi": "Quản trị và vận hành hệ thống."
+        },
+        "technologies": [
+          "ERPNext"
+        ],
+        "responsibilities": {
+          "en": [
+            "Administering, operating and supporting system stability"
+          ],
+          "vi": [
+            "Quản trị, vận hành và hỗ trợ bảo đảm ổn định hệ thống"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "hrm",
+        "to": "eoffice"
+      },
+      {
+        "from": "hrm",
+        "to": "dashboards",
+        "label": {
+          "en": "Reports",
+          "vi": "Báo cáo"
+        }
+      },
+      {
+        "from": "hrm",
+        "to": "api",
+        "label": {
+          "en": "API",
+          "vi": "API"
+        }
+      },
+      {
+        "from": "hrm",
+        "to": "mobile"
+      },
+      {
+        "from": "operations",
+        "to": "hrm"
+      }
+    ]
+  }
+}

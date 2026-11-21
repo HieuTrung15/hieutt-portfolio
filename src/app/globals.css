@@ -1,0 +1,307 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens — see DESIGN_SYSTEM.md. Purple night theme (default) + light variant.
+ * --brand comes from content/site.json (accentColor, default #C770F0).
+ */
+:root {
+  --brand: #c770f0;
+  /* Darker accent on light backgrounds so purple text stays readable (AA). */
+  --brand-ink: color-mix(in oklab, var(--brand) 62%, #000);
+  --brand-soft: color-mix(in oklab, var(--brand) 12%, white);
+  --background: #faf7fd;
+  --background-alt: #f3edfa;
+  --bg-gradient: linear-gradient(270deg, #faf7fd, #f1eafa);
+  --nav-scrolled: rgba(250, 247, 253, 0.8);
+  --footer: #ece4f6;
+  --foreground: #1d1430;
+  --secondary-foreground: #5d4f70;
+  --faint: #9d8fb0;
+  --border: #e3d7f1;
+  --card: #ffffff;
+  --primary: #623686;
+  --primary-foreground: #ffffff;
+  --hover: #efe6f8;
+  --glow: 0 4px 14px 0 rgba(119, 53, 136, 0.16);
+  --glow-strong: 0 6px 20px 2px rgba(129, 72, 144, 0.28);
+  --star: 120, 70, 170;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --brand-ink: var(--brand);
+  --brand-soft: color-mix(in oklab, var(--brand) 16%, #1b1429);
+  --background: #1b1429;
+  --background-alt: #211835;
+  --bg-gradient: linear-gradient(270deg, #1b1429, #140f23);
+  --nav-scrolled: rgba(27, 26, 46, 0.66);
+  --footer: #0a0416;
+  --foreground: #ffffff;
+  --secondary-foreground: #b9a9cf;
+  --faint: #7c6a92;
+  --border: #3a2a52;
+  --card: #170f26;
+  --primary: #623686;
+  --primary-foreground: #ffffff;
+  --hover: #2a2040;
+  --glow: 0 4px 5px 3px rgba(119, 53, 136, 0.46);
+  --glow-strong: 0 4px 4px 5px rgba(129, 72, 144, 0.56);
+  --star: 255, 255, 255;
+}
+
+@theme inline {
+  --font-sans: var(--font-mono-family), ui-monospace, monospace;
+  --font-mono: var(--font-mono-family), ui-monospace, monospace;
+  --color-brand: var(--brand-ink);
+  --color-brand-raw: var(--brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-background: var(--background);
+  --color-background-alt: var(--background-alt);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--secondary-foreground);
+  --color-faint: var(--faint);
+  --color-border: var(--border);
+  --color-input: var(--border);
+  --color-ring: var(--brand);
+  --color-card: var(--card);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--card);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--hover);
+  --color-secondary-foreground: var(--foreground);
+  --color-muted: var(--background-alt);
+  --color-accent: var(--hover);
+  --color-accent-foreground: var(--foreground);
+  --color-destructive: #dc2626;
+  --radius-sm: calc(var(--radius) - 6px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: calc(var(--radius) - 2px);
+  --radius-xl: var(--radius);
+  --radius-2xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply text-foreground antialiased;
+    background-color: var(--background);
+    background-image: var(--bg-gradient);
+    background-attachment: fixed;
+  }
+  ::selection {
+    background: color-mix(in oklab, var(--brand) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  [data-section] {
+    scroll-margin-top: 5.5rem;
+  }
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: color-mix(in oklab, var(--brand) 22%, var(--background));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--brand) 85%, transparent);
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Glowing card used across the site (projects, quote, panels). */
+@utility glow-card {
+  background-color: var(--card);
+  box-shadow: var(--glow);
+  border-radius: 0.375rem;
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+@utility glow-card-hover {
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: var(--glow-strong);
+  }
+}
+
+/* Pill used for skills and filters. */
+@utility tech-pill {
+  border: 1.7px solid color-mix(in oklab, var(--brand) 60%, transparent);
+  border-radius: 24px;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+  transition: transform 0.25s ease, outline-color 0.25s ease;
+  &:hover {
+    transform: scale(1.05);
+    outline: 2.2px solid color-mix(in oklab, var(--brand) 88%, transparent);
+  }
+}
+
+@utility dot-grid {
+  background-image: radial-gradient(color-mix(in oklab, var(--foreground) 14%, transparent) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Waving hand */
+@keyframes wave-hand {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60%, 100% { transform: rotate(0deg); }
+}
+.wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave-hand 2.1s infinite;
+}
+
+@keyframes float-chip {
+  from { transform: translateY(0); }
+  to { transform: translateY(-7px); }
+}
+.float-chip {
+  animation: float-chip 2.6s ease-in-out infinite alternate;
+}
+
+/* Avatar tilts slightly towards the pointer side on hover. */
+.tilt {
+  transition: transform 0.45s ease;
+}
+.tilt:hover {
+  transform: perspective(700px) rotateX(6deg) rotateY(-10deg) scale(1.04);
+}
+
+@keyframes caret-blink {
+  50% { opacity: 0; }
+}
+.caret {
+  animation: caret-blink 1s step-end infinite;
+}
+
+/* Navbar link underline that grows on hover / marks the current page. */
+.nav-underline {
+  position: relative;
+}
+.nav-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  height: 5px;
+  width: 0;
+  border-radius: 16px;
+  background: var(--brand);
+  transition: width 0.3s ease-out;
+}
+.nav-underline:hover::after,
+.nav-underline[aria-current]::after {
+  width: 100%;
+}
+
+/* White social circle with a purple ring on hover. */
+.social-circle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.97);
+  color: #700c86;
+  transition: 0.5s;
+  /* No z-index here: the ring (::before, z-index -1) must sit behind the white disc, not on top of it. */
+}
+.social-circle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: #68187a;
+  transform: scale(0.9);
+  transition: 0.5s;
+  z-index: -1;
+}
+.social-circle:hover {
+  color: #87209e;
+  box-shadow: 0 0 5px #87209e;
+}
+.social-circle:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #801f95;
+}
+
+/* Case study markdown */
+.case-prose {
+  @apply prose max-w-none;
+  --tw-prose-body: var(--secondary-foreground);
+  --tw-prose-headings: var(--foreground);
+  --tw-prose-links: var(--brand-ink);
+  --tw-prose-bold: var(--foreground);
+  --tw-prose-quotes: var(--foreground);
+  --tw-prose-quote-borders: var(--brand);
+  --tw-prose-bullets: var(--faint);
+  --tw-prose-hr: var(--border);
+  --tw-prose-code: var(--foreground);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+.case-prose blockquote {
+  @apply rounded-r-lg bg-brand-soft py-1 font-normal not-italic;
+}
+.case-prose blockquote p::before,
+.case-prose blockquote p::after,
+.case-prose code::before,
+.case-prose code::after {
+  content: none;
+}
+.case-prose code {
+  @apply rounded border bg-muted px-1.5 py-0.5 font-mono text-[0.85em] font-normal;
+}
+
+/* Résumé "paper" prints cleanly: only the sheet. */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #fff !important;
+  }
+  .resume-paper {
+    box-shadow: none !important;
+    margin: 0 !important;
+    max-width: none !important;
+  }
+}

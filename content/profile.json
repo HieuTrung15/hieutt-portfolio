@@ -1,0 +1,67 @@
+{
+  "name": "Trần Trung Hiếu",
+  "title": "ERPNext Developer & Enterprise Software Engineer",
+  "tagline": "Building software for real-world business.",
+  "eyebrow": "ERPNext Developer · Enterprise Software Engineer",
+  "greeting": {
+    "en": "Hi There!",
+    "vi": "Xin chào!"
+  },
+  "statement": {
+    "en": "I turn complex business processes into software systems that work in the real world.",
+    "vi": "Tôi biến những quy trình nghiệp vụ phức tạp thành hệ thống phần mềm có thể vận hành trong thực tế."
+  },
+  "intro": {
+    "en": "I'm a developer specializing in ERP solutions built on ERPNext, Frappe Framework and Odoo. Since 2021, I've helped build and deploy systems for human resource management, manufacturing, warehousing and logistics, purchasing and sales, and business administration.\n\nI currently work at Vietnam National Textile and Garment Group (Vinatex), focusing on HRM system development, software integration and improving internal applications.",
+    "vi": "Tôi là một lập trình viên chuyên phát triển giải pháp ERP trên nền tảng ERPNext, Frappe Framework và Odoo. Từ năm 2021, tôi đã tham gia xây dựng và triển khai các hệ thống phục vụ quản trị nhân sự, sản xuất, kho vận, mua bán hàng và quản trị doanh nghiệp.\n\nHiện tôi đang làm việc tại Tập đoàn Dệt may Việt Nam, tập trung vào phát triển hệ thống HRM, tích hợp phần mềm và cải tiến các ứng dụng nội bộ."
+  },
+  "location": {
+    "en": "Hanoi, Vietnam",
+    "vi": "Hà Nội, Việt Nam"
+  },
+  "email": "hieutrungvietnam0107@gmail.com",
+  "avatar": "",
+  "careerStart": "2021-01",
+  "coreStack": [
+    "ERPNext",
+    "Frappe Framework",
+    "Python",
+    "JavaScript",
+    "Odoo",
+    "ReactJS",
+    "MySQL",
+    "PostgreSQL"
+  ],
+  "about": {
+    "heading": {
+      "en": "Beyond the *Code*",
+      "vi": "Beyond the *Code*"
+    },
+    "statement": {
+      "en": "I care about how technology solves problems, not just how it's written.",
+      "vi": "Tôi quan tâm đến cách công nghệ giải quyết vấn đề, không chỉ cách nó được viết ra."
+    },
+    "body": {
+      "en": "I graduated in Information Technology from Hanoi University of Industry and started working in January 2021 at BnK Solution, where I developed features on the Odoo platform. In 2022 I moved to ERPNext and have kept growing through ERP projects at Lotusa, NXCOM and now Vietnam National Textile and Garment Group.\n\nThese projects exposed me to a wide range of business problems: manufacturing, warehousing, purchasing and sales, logistics and human resources. I've learned that an ERP system only creates value when it fits how a business actually runs day to day — so beyond writing code, I focus on analyzing requirements, standardizing processes, improving systems and integrating software.\n\nI keep learning every day and actively follow new technologies to make the systems I build better.",
+      "vi": "Tôi tốt nghiệp ngành Công nghệ thông tin tại Đại học Công nghiệp Hà Nội và bắt đầu đi làm từ tháng 01/2021 tại BnK Solution, nơi tôi phát triển các chức năng trên nền tảng Odoo. Từ năm 2022, tôi chuyển sang ERPNext và tiếp tục phát triển chuyên môn qua các dự án ERP tại Lotusa, NXCOM và hiện nay là Tập đoàn Dệt may Việt Nam.\n\nCác dự án này cho tôi tiếp xúc với nhiều bài toán nghiệp vụ doanh nghiệp: sản xuất, kho, mua bán hàng, logistics và nhân sự. Tôi học được rằng một hệ thống ERP chỉ thực sự có giá trị khi nó khớp với cách doanh nghiệp vận hành hằng ngày — vì vậy, bên cạnh việc lập trình, tôi chú trọng phân tích yêu cầu, chuẩn hóa quy trình, cải tiến hệ thống và tích hợp các phần mềm với nhau.\n\nTôi vẫn đang học hỏi mỗi ngày và chủ động cập nhật công nghệ mới để làm tốt hơn những hệ thống mình phát triển."
+    }
+  },
+  "interests": {
+    "en": [
+      "Reading novels"
+    ],
+    "vi": [
+      "Đọc tiểu thuyết"
+    ]
+  },
+  "contact": {
+    "heading": {
+      "en": "Have a technology problem to solve?",
+      "vi": "Có một bài toán công nghệ cần giải quyết?"
+    },
+    "description": {
+      "en": "I'm always happy to talk about ERPNext, Frappe Framework, system integration and enterprise software solutions.",
+      "vi": "Tôi luôn sẵn sàng trao đổi về ERPNext, Frappe Framework, tích hợp hệ thống và các giải pháp phần mềm doanh nghiệp."
+    }
+  }
+}

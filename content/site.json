@@ -1,0 +1,189 @@
+{
+  "title": {
+    "en": "Trần Trung Hiếu | ERPNext Developer & Enterprise Software Engineer",
+    "vi": "Trần Trung Hiếu | ERPNext Developer & Enterprise Software Engineer"
+  },
+  "description": {
+    "en": "Portfolio of Trần Trung Hiếu — ERPNext Developer specializing in Frappe Framework, Python, ERP customization, API integration and enterprise software development.",
+    "vi": "Portfolio của Trần Trung Hiếu — ERPNext Developer chuyên Frappe Framework, Python, tùy chỉnh hệ thống ERP, tích hợp API và phát triển phần mềm doanh nghiệp."
+  },
+  "logoText": "TH.",
+  "url": "https://henry-tran.is-a.dev",
+  "accentColor": "#C770F0",
+  "cvPath": "",
+  "pageLabels": {
+    "home": {
+      "en": "Home",
+      "vi": "Trang chủ"
+    },
+    "about": {
+      "en": "About",
+      "vi": "Giới thiệu"
+    },
+    "projects": {
+      "en": "Projects",
+      "vi": "Dự án"
+    },
+    "resume": {
+      "en": "Resume",
+      "vi": "Hồ sơ CV"
+    }
+  },
+  "sections": [
+    {
+      "id": "home",
+      "label": {
+        "en": "Home",
+        "vi": "Trang chủ"
+      },
+      "visible": true
+    },
+    {
+      "id": "about",
+      "label": {
+        "en": "About",
+        "vi": "Giới thiệu"
+      },
+      "title": {
+        "en": "Let me *introduce* myself",
+        "vi": "Đôi nét *giới thiệu* về tôi"
+      },
+      "visible": true
+    },
+    {
+      "id": "highlights",
+      "label": {
+        "en": "Highlights",
+        "vi": "Điểm nổi bật"
+      },
+      "title": {
+        "en": "Professional *Highlights*",
+        "vi": "Những *điểm nổi bật*"
+      },
+      "visible": true
+    },
+    {
+      "id": "work",
+      "label": {
+        "en": "Selected Work",
+        "vi": "Dự án tiêu biểu"
+      },
+      "title": {
+        "en": "My Recent *Works*",
+        "vi": "Các *dự án* tiêu biểu"
+      },
+      "description": {
+        "en": "Here are the ERP systems I've worked on — from human resource management to manufacturing and supply chain.",
+        "vi": "Những hệ thống ERP tôi đã tham gia xây dựng — từ quản trị nhân sự đến sản xuất và chuỗi cung ứng."
+      },
+      "visible": true
+    },
+    {
+      "id": "expertise",
+      "label": {
+        "en": "Expertise",
+        "vi": "Chuyên môn"
+      },
+      "title": {
+        "en": "Professional *Skillset*",
+        "vi": "Bộ *kỹ năng* chuyên môn"
+      },
+      "description": {
+        "en": "Skills grouped by capability. Select a skill to see the projects that used it.",
+        "vi": "Kỹ năng được phân theo năng lực. Chọn một kỹ năng để xem những dự án đã sử dụng nó."
+      },
+      "visible": true
+    },
+    {
+      "id": "experience",
+      "label": {
+        "en": "Experience",
+        "vi": "Kinh nghiệm"
+      },
+      "title": {
+        "en": "Career *Journey*",
+        "vi": "Hành trình *nghề nghiệp*"
+      },
+      "description": {
+        "en": "From Odoo to ERPNext, across manufacturing, warehousing, purchasing, sales and HR projects.",
+        "vi": "Từ Odoo đến ERPNext, qua các dự án sản xuất, kho vận, mua bán hàng và nhân sự."
+      },
+      "visible": true
+    },
+    {
+      "id": "education",
+      "label": {
+        "en": "Education",
+        "vi": "Học vấn"
+      },
+      "title": {
+        "en": "*Education*",
+        "vi": "*Học vấn*"
+      },
+      "visible": true
+    },
+    {
+      "id": "contact",
+      "label": {
+        "en": "Contact",
+        "vi": "Liên hệ"
+      },
+      "title": {
+        "en": "Find Me On",
+        "vi": "Kết nối với tôi"
+      },
+      "visible": true
+    }
+  ],
+  "projectCategories": [
+    {
+      "id": "erp",
+      "label": {
+        "en": "ERP",
+        "vi": "ERP"
+      }
+    },
+    {
+      "id": "hrm",
+      "label": {
+        "en": "HRM",
+        "vi": "HRM"
+      }
+    },
+    {
+      "id": "manufacturing",
+      "label": {
+        "en": "Manufacturing",
+        "vi": "Sản xuất"
+      }
+    },
+    {
+      "id": "inventory",
+      "label": {
+        "en": "Inventory",
+        "vi": "Kho"
+      }
+    },
+    {
+      "id": "supply-chain",
+      "label": {
+        "en": "Supply Chain",
+        "vi": "Chuỗi cung ứng"
+      }
+    },
+    {
+      "id": "integration",
+      "label": {
+        "en": "Integration",
+        "vi": "Tích hợp"
+      }
+    },
+    {
+      "id": "web",
+      "label": {
+        "en": "Web",
+        "vi": "Web"
+      }
+    }
+  ]
+}

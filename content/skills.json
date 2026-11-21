@@ -1,0 +1,341 @@
+{
+  "groups": [
+    {
+      "id": "erp-development",
+      "title": {
+        "en": "ERP Development",
+        "vi": "Phát triển ERP"
+      },
+      "description": {
+        "en": "Building and customizing systems on ERP platforms.",
+        "vi": "Xây dựng và tùy chỉnh hệ thống trên nền tảng ERP."
+      }
+    },
+    {
+      "id": "backend-integration",
+      "title": {
+        "en": "Backend & Integration",
+        "vi": "Backend & Tích hợp"
+      },
+      "description": {
+        "en": "Business logic, data and system integration.",
+        "vi": "Logic nghiệp vụ, dữ liệu và kết nối hệ thống."
+      }
+    },
+    {
+      "id": "frontend",
+      "title": {
+        "en": "Frontend Development",
+        "vi": "Phát triển Frontend"
+      },
+      "description": {
+        "en": "ERP interfaces, reports and dashboards.",
+        "vi": "Giao diện ERP, báo cáo và dashboard."
+      }
+    },
+    {
+      "id": "business-domains",
+      "title": {
+        "en": "Enterprise Business Domains",
+        "vi": "Nghiệp vụ doanh nghiệp"
+      },
+      "description": {
+        "en": "Business domains I've worked on in deployments.",
+        "vi": "Các lĩnh vực nghiệp vụ đã tham gia triển khai."
+      }
+    },
+    {
+      "id": "system-delivery",
+      "title": {
+        "en": "System Delivery",
+        "vi": "Triển khai hệ thống"
+      },
+      "description": {
+        "en": "From requirements analysis to system operations.",
+        "vi": "Từ phân tích yêu cầu đến vận hành hệ thống."
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": "erpnext",
+      "name": "ERPNext",
+      "group": "erp-development",
+      "icon": "erpnext",
+      "visible": true
+    },
+    {
+      "id": "frappe-framework",
+      "name": "Frappe Framework",
+      "group": "erp-development",
+      "icon": "frappe",
+      "visible": true
+    },
+    {
+      "id": "odoo",
+      "name": "Odoo",
+      "group": "erp-development",
+      "icon": "odoo",
+      "visible": true
+    },
+    {
+      "id": "custom-doctypes",
+      "name": "Custom DocTypes",
+      "group": "erp-development",
+      "icon": "file-cog",
+      "visible": true
+    },
+    {
+      "id": "workflow",
+      "name": "Workflow",
+      "group": "erp-development",
+      "icon": "workflow",
+      "visible": true
+    },
+    {
+      "id": "erp-modules",
+      "name": "ERP Modules",
+      "group": "erp-development",
+      "icon": "boxes",
+      "visible": true
+    },
+    {
+      "id": "print-formats",
+      "name": "Print Formats",
+      "group": "erp-development",
+      "icon": "printer",
+      "visible": true
+    },
+    {
+      "id": "custom-reports",
+      "name": "Custom Reports",
+      "group": "erp-development",
+      "icon": "file-chart",
+      "visible": true
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "group": "backend-integration",
+      "icon": "python",
+      "visible": true
+    },
+    {
+      "id": "rest-api-integration",
+      "name": "REST API Integration",
+      "group": "backend-integration",
+      "icon": "plug",
+      "visible": true
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "group": "backend-integration",
+      "icon": "mysql",
+      "visible": true
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "group": "backend-integration",
+      "icon": "mariadb",
+      "visible": true
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "group": "backend-integration",
+      "icon": "postgresql",
+      "visible": true
+    },
+    {
+      "id": "database-design",
+      "name": "Database Design",
+      "group": "backend-integration",
+      "icon": "database",
+      "visible": true
+    },
+    {
+      "id": "business-logic",
+      "name": "Business Logic",
+      "group": "backend-integration",
+      "icon": "braces",
+      "visible": true
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "group": "backend-integration",
+      "icon": "bot",
+      "visible": true
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "group": "frontend",
+      "icon": "html5",
+      "visible": true
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "group": "frontend",
+      "icon": "css",
+      "visible": true
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "group": "frontend",
+      "icon": "javascript",
+      "visible": true
+    },
+    {
+      "id": "reactjs",
+      "name": "ReactJS",
+      "group": "frontend",
+      "icon": "react",
+      "visible": true
+    },
+    {
+      "id": "jinja2",
+      "name": "Jinja2",
+      "group": "frontend",
+      "icon": "jinja",
+      "visible": true
+    },
+    {
+      "id": "erp-interface-customization",
+      "name": "ERP Interface Customization",
+      "group": "frontend",
+      "icon": "panels-top-left",
+      "visible": true
+    },
+    {
+      "id": "management-dashboards",
+      "name": "Management Dashboards",
+      "group": "frontend",
+      "icon": "layout-dashboard",
+      "visible": true
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing",
+      "group": "business-domains",
+      "icon": "factory",
+      "visible": true
+    },
+    {
+      "id": "mrp",
+      "name": "MRP",
+      "group": "business-domains",
+      "icon": "calculator",
+      "visible": true
+    },
+    {
+      "id": "inventory",
+      "name": "Inventory",
+      "group": "business-domains",
+      "icon": "warehouse",
+      "visible": true
+    },
+    {
+      "id": "purchasing",
+      "name": "Purchasing",
+      "group": "business-domains",
+      "icon": "shopping-cart",
+      "visible": true
+    },
+    {
+      "id": "sales",
+      "name": "Sales",
+      "group": "business-domains",
+      "icon": "badge-dollar-sign",
+      "visible": true
+    },
+    {
+      "id": "logistics",
+      "name": "Logistics",
+      "group": "business-domains",
+      "icon": "truck",
+      "visible": true
+    },
+    {
+      "id": "crm",
+      "name": "CRM",
+      "group": "business-domains",
+      "icon": "handshake",
+      "visible": true
+    },
+    {
+      "id": "human-resources",
+      "name": "Human Resources",
+      "group": "business-domains",
+      "icon": "users",
+      "visible": true
+    },
+    {
+      "id": "quality-management",
+      "name": "Quality Management",
+      "group": "business-domains",
+      "icon": "badge-check",
+      "visible": true
+    },
+    {
+      "id": "business-requirements-analysis",
+      "name": "Business Requirements Analysis",
+      "group": "system-delivery",
+      "icon": "clipboard-list",
+      "visible": true
+    },
+    {
+      "id": "business-process-standardization",
+      "name": "Business Process Standardization",
+      "group": "system-delivery",
+      "icon": "list-checks",
+      "visible": true
+    },
+    {
+      "id": "erp-implementation",
+      "name": "ERP Implementation",
+      "group": "system-delivery",
+      "icon": "rocket",
+      "visible": true
+    },
+    {
+      "id": "data-migration-planning",
+      "name": "Data Migration Planning",
+      "group": "system-delivery",
+      "icon": "arrow-right-left",
+      "visible": true
+    },
+    {
+      "id": "user-training",
+      "name": "User Training",
+      "group": "system-delivery",
+      "icon": "graduation-cap",
+      "visible": true
+    },
+    {
+      "id": "system-administration",
+      "name": "System Administration",
+      "group": "system-delivery",
+      "icon": "server-cog",
+      "visible": true
+    },
+    {
+      "id": "maintenance",
+      "name": "Maintenance",
+      "group": "system-delivery",
+      "icon": "wrench",
+      "visible": true
+    },
+    {
+      "id": "technical-support",
+      "name": "Technical Support",
+      "group": "system-delivery",
+      "icon": "headset",
+      "visible": true
+    }
+  ]
+}

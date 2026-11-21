@@ -1,0 +1,26 @@
+{
+  "slug": "water-infrastructure",
+  "title": "Water Infrastructure Management Website",
+  "shortTitle": "Water Infrastructure",
+  "status": "published",
+  "featured": false,
+  "order": 7,
+  "organization": {
+    "en": "Vinatex",
+    "vi": "Vinatex"
+  },
+  "category": "Web",
+  "categories": [
+    "web"
+  ],
+  "summary": {
+    "en": "A website for managing the water supply infrastructure of a subsidiary.",
+    "vi": "Website phục vụ quản lý hệ thống hạ tầng cung cấp nguồn nước cho công ty con."
+  },
+  "technologies": [],
+  "skillIds": [],
+  "responsibilities": [],
+  "modules": [],
+  "contributions": [],
+  "gallery": []
+}

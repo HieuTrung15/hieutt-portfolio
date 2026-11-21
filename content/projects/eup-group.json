@@ -1,0 +1,542 @@
+{
+  "slug": "eup-group",
+  "title": "EUP Group — Manufacturing & Supply Chain ERP",
+  "shortTitle": "EUP Group",
+  "status": "published",
+  "featured": true,
+  "order": 2,
+  "organization": {
+    "en": "NXCOM",
+    "vi": "NXCOM"
+  },
+  "role": "ERPNext Consultant",
+  "start": "2023-07",
+  "end": "2025-08",
+  "category": "Manufacturing / Supply Chain",
+  "categories": [
+    "erp",
+    "manufacturing",
+    "inventory",
+    "supply-chain",
+    "integration"
+  ],
+  "summary": {
+    "en": "ERP for manufacturing, warehousing, purchasing, sales and logistics: customized BOM, Work Order and Stock Entry, plus a DocType for shipment tracking.",
+    "vi": "ERP cho sản xuất, kho, mua bán hàng và logistics: tùy chỉnh BOM, Work Order, Stock Entry và DocType theo dõi vận chuyển."
+  },
+  "overview": {
+    "en": "Contributed to an ERP system supporting manufacturing, warehousing, purchasing, sales and logistics operations.",
+    "vi": "Tham gia phát triển hệ thống ERP phục vụ hoạt động sản xuất, kho, mua bán hàng và logistics."
+  },
+  "technologies": [
+    "ERPNext",
+    "Frappe Framework",
+    "Python",
+    "JavaScript",
+    "MariaDB",
+    "Jinja2"
+  ],
+  "skillIds": [
+    "erpnext",
+    "frappe-framework",
+    "custom-doctypes",
+    "workflow",
+    "erp-modules",
+    "print-formats",
+    "custom-reports",
+    "python",
+    "rest-api-integration",
+    "mariadb",
+    "business-logic",
+    "automation",
+    "javascript",
+    "jinja2",
+    "manufacturing",
+    "inventory",
+    "purchasing",
+    "sales",
+    "logistics",
+    "quality-management",
+    "business-requirements-analysis",
+    "data-migration-planning",
+    "user-training"
+  ],
+  "responsibilities": [
+    {
+      "text": {
+        "en": "Contributed to an ERP system for manufacturing, warehousing, purchasing, sales and logistics.",
+        "vi": "Tham gia phát triển hệ thống ERP phục vụ sản xuất, kho, mua bán hàng và logistics."
+      },
+      "type": "team"
+    },
+    {
+      "text": {
+        "en": "Customized BOM, Work Order, Production Plan and Stock Entry; built production shift reports and production progress tracking.",
+        "vi": "Tùy chỉnh BOM, Work Order, Production Plan và Stock Entry; xây dựng báo cáo ca sản xuất và theo dõi tiến độ sản xuất."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Built a DocType to track the shipment process.",
+        "vi": "Xây dựng DocType theo dõi quá trình vận chuyển hàng hóa."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Automated workflows; developed custom reports, Jinja2 print formats and email templates.",
+        "vi": "Tự động hóa workflow; phát triển custom report, mẫu in Jinja2 và mẫu email."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Integrated APIs for the mobile app.",
+        "vi": "Tích hợp API cho ứng dụng di động."
+      },
+      "type": "development"
+    },
+    {
+      "text": {
+        "en": "Planned data migration.",
+        "vi": "Lập kế hoạch chuyển đổi dữ liệu."
+      },
+      "type": "management"
+    },
+    {
+      "text": {
+        "en": "Trained users.",
+        "vi": "Đào tạo người dùng."
+      },
+      "type": "operations"
+    }
+  ],
+  "modules": [
+    {
+      "name": "Manufacturing",
+      "items": {
+        "en": [
+          "BOM customization",
+          "Work Order customization",
+          "Production Plan",
+          "Stock Entry",
+          "Production shift reports",
+          "Production progress tracking",
+          "Finished and semi-finished goods statistics"
+        ],
+        "vi": [
+          "BOM customization",
+          "Work Order customization",
+          "Production Plan",
+          "Stock Entry",
+          "Báo cáo ca sản xuất",
+          "Theo dõi tiến độ sản xuất",
+          "Thống kê thành phẩm và bán thành phẩm"
+        ]
+      }
+    },
+    {
+      "name": "Inventory",
+      "items": {
+        "en": [
+          "Item",
+          "Warehouse",
+          "Delivery Note",
+          "Stock Entry",
+          "Purchase Receipt",
+          "Batch tracking",
+          "Stock receipt and issue management",
+          "Inventory and transaction reports",
+          "Quality control of incoming and returned goods"
+        ],
+        "vi": [
+          "Item",
+          "Warehouse",
+          "Delivery Note",
+          "Stock Entry",
+          "Purchase Receipt",
+          "Theo dõi hàng hóa theo Batch",
+          "Quản lý nhập xuất kho",
+          "Báo cáo tồn kho và giao dịch",
+          "Kiểm soát chất lượng hàng nhập và hàng trả về"
+        ]
+      }
+    },
+    {
+      "name": "Buying & Selling",
+      "items": {
+        "en": [
+          "Material Request",
+          "Sales Order",
+          "Purchase Order",
+          "Purchase Receipt",
+          "Repair Request",
+          "Purchase and sales transaction tracking"
+        ],
+        "vi": [
+          "Material Request",
+          "Sales Order",
+          "Purchase Order",
+          "Purchase Receipt",
+          "Repair Request",
+          "Theo dõi giao dịch mua bán"
+        ]
+      }
+    },
+    {
+      "name": "Logistics",
+      "items": {
+        "en": [
+          "DocType for shipment tracking",
+          "Customer delivery tracking",
+          "Supplier-to-warehouse shipment tracking",
+          "Support for cash-flow-related requests"
+        ],
+        "vi": [
+          "Doctype theo dõi quá trình vận chuyển",
+          "Theo dõi giao hàng cho khách hàng",
+          "Theo dõi vận chuyển từ nhà cung cấp về kho",
+          "Hỗ trợ các yêu cầu liên quan đến dòng tiền"
+        ]
+      }
+    },
+    {
+      "name": "Automation & Documents",
+      "items": {
+        "en": [
+          "Workflow automation",
+          "Custom reports",
+          "Jinja2 print formats",
+          "Email templates"
+        ],
+        "vi": [
+          "Workflow automation",
+          "Custom reports",
+          "Jinja2 print formats",
+          "Email templates"
+        ]
+      }
+    }
+  ],
+  "contributions": [
+    {
+      "label": {
+        "en": "Customized modules",
+        "vi": "Phân hệ đã tùy chỉnh"
+      },
+      "value": {
+        "en": "Manufacturing, Inventory, Buying and Selling.",
+        "vi": "Manufacturing, Inventory, Buying và Selling."
+      }
+    },
+    {
+      "label": {
+        "en": "Digitized processes",
+        "vi": "Quy trình đã số hóa"
+      },
+      "value": {
+        "en": "Tracking shipments to customers and from suppliers to the warehouse with a dedicated DocType.",
+        "vi": "Theo dõi vận chuyển hàng hóa tới khách hàng và từ nhà cung cấp về kho bằng DocType riêng."
+      }
+    },
+    {
+      "label": {
+        "en": "Reports & documents",
+        "vi": "Báo cáo & chứng từ"
+      },
+      "value": {
+        "en": "Custom reports, production shift reports, Jinja2 print formats and email templates.",
+        "vi": "Custom report, báo cáo ca sản xuất, mẫu in Jinja2 và mẫu email."
+      }
+    },
+    {
+      "label": {
+        "en": "Integrated systems",
+        "vi": "Hệ thống đã tích hợp"
+      },
+      "value": {
+        "en": "APIs for the mobile app.",
+        "vi": "API phục vụ ứng dụng di động."
+      }
+    },
+    {
+      "label": {
+        "en": "Scope of involvement",
+        "vi": "Phạm vi tham gia"
+      },
+      "value": {
+        "en": "Development, workflow automation, data migration planning and user training.",
+        "vi": "Phát triển, tự động hóa workflow, lập kế hoạch chuyển đổi dữ liệu và đào tạo người dùng."
+      }
+    }
+  ],
+  "gallery": [],
+  "diagram": {
+    "kind": "conceptual",
+    "title": {
+      "en": "Manufacturing & supply chain flow",
+      "vi": "Luồng nghiệp vụ sản xuất & chuỗi cung ứng"
+    },
+    "nodes": [
+      {
+        "id": "selling",
+        "label": "Selling",
+        "icon": "cart",
+        "x": 8,
+        "y": 18,
+        "description": {
+          "en": "Sales orders and repair requests; sales transaction tracking.",
+          "vi": "Đơn bán hàng và yêu cầu sửa chữa; theo dõi giao dịch bán."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python",
+          "JavaScript"
+        ],
+        "responsibilities": {
+          "en": [
+            "Sales Order",
+            "Repair Request",
+            "Sales transaction tracking"
+          ],
+          "vi": [
+            "Sales Order",
+            "Repair Request",
+            "Theo dõi giao dịch bán"
+          ]
+        }
+      },
+      {
+        "id": "planning",
+        "label": "Manufacturing Planning",
+        "icon": "clipboard",
+        "x": 34,
+        "y": 18,
+        "description": {
+          "en": "Bills of materials and production planning.",
+          "vi": "Định mức nguyên vật liệu và kế hoạch sản xuất."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "BOM customization",
+            "Production Plan"
+          ],
+          "vi": [
+            "BOM customization",
+            "Production Plan"
+          ]
+        }
+      },
+      {
+        "id": "production",
+        "label": "Production",
+        "icon": "factory",
+        "x": 60,
+        "y": 18,
+        "description": {
+          "en": "Work orders, material transfers and progress tracking.",
+          "vi": "Lệnh sản xuất, xuất nhập vật tư và theo dõi tiến độ."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python",
+          "JavaScript"
+        ],
+        "responsibilities": {
+          "en": [
+            "Work Order customization",
+            "Stock Entry",
+            "Production progress tracking",
+            "Finished and semi-finished goods statistics"
+          ],
+          "vi": [
+            "Work Order customization",
+            "Stock Entry",
+            "Theo dõi tiến độ sản xuất",
+            "Thống kê thành phẩm và bán thành phẩm"
+          ]
+        }
+      },
+      {
+        "id": "purchasing",
+        "label": "Purchasing",
+        "icon": "handshake",
+        "x": 18,
+        "y": 82,
+        "description": {
+          "en": "Material requests, purchase orders and goods receipt.",
+          "vi": "Yêu cầu vật tư, đơn mua hàng và nhận hàng."
+        },
+        "technologies": [
+          "ERPNext",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Material Request",
+            "Purchase Order",
+            "Purchase Receipt",
+            "Purchase transaction tracking"
+          ],
+          "vi": [
+            "Material Request",
+            "Purchase Order",
+            "Purchase Receipt",
+            "Theo dõi giao dịch mua"
+          ]
+        }
+      },
+      {
+        "id": "inventory",
+        "label": "Inventory",
+        "icon": "warehouse",
+        "x": 48,
+        "y": 82,
+        "description": {
+          "en": "Items, warehouses, batches and quality control of incoming/returned goods.",
+          "vi": "Hàng hóa, kho, lô (Batch) và kiểm soát chất lượng hàng nhập/trả về."
+        },
+        "technologies": [
+          "ERPNext",
+          "MariaDB"
+        ],
+        "responsibilities": {
+          "en": [
+            "Item & Warehouse",
+            "Batch tracking",
+            "Stock receipt and issue management",
+            "Quality control of incoming and returned goods"
+          ],
+          "vi": [
+            "Item & Warehouse",
+            "Theo dõi hàng hóa theo Batch",
+            "Quản lý nhập xuất kho",
+            "Kiểm soát chất lượng hàng nhập và hàng trả về"
+          ]
+        }
+      },
+      {
+        "id": "logistics",
+        "label": "Logistics",
+        "icon": "truck",
+        "x": 78,
+        "y": 82,
+        "description": {
+          "en": "Dedicated DocType tracking the shipment process.",
+          "vi": "DocType riêng theo dõi quá trình vận chuyển hàng hóa."
+        },
+        "technologies": [
+          "Frappe Framework",
+          "Python"
+        ],
+        "responsibilities": {
+          "en": [
+            "Customer delivery tracking",
+            "Supplier-to-warehouse shipment tracking",
+            "Support for cash-flow-related requests"
+          ],
+          "vi": [
+            "Theo dõi giao hàng cho khách hàng",
+            "Theo dõi vận chuyển từ nhà cung cấp về kho",
+            "Hỗ trợ các yêu cầu liên quan đến dòng tiền"
+          ]
+        }
+      },
+      {
+        "id": "reporting",
+        "label": "Reporting",
+        "icon": "chart",
+        "x": 91,
+        "y": 50,
+        "description": {
+          "en": "Reports, print formats and email templates for daily operations.",
+          "vi": "Báo cáo, mẫu in và mẫu email phục vụ vận hành."
+        },
+        "technologies": [
+          "Jinja2",
+          "Python",
+          "MariaDB"
+        ],
+        "responsibilities": {
+          "en": [
+            "Custom reports",
+            "Production shift reports",
+            "Inventory and transaction reports",
+            "Jinja2 print formats",
+            "Email templates"
+          ],
+          "vi": [
+            "Custom reports",
+            "Báo cáo ca sản xuất",
+            "Báo cáo tồn kho và giao dịch",
+            "Jinja2 print formats",
+            "Email templates"
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "selling",
+        "to": "planning",
+        "label": {
+          "en": "Sales Order",
+          "vi": "Sales Order"
+        }
+      },
+      {
+        "from": "planning",
+        "to": "production",
+        "label": {
+          "en": "Work Order",
+          "vi": "Work Order"
+        }
+      },
+      {
+        "from": "planning",
+        "to": "purchasing",
+        "label": {
+          "en": "Material Request",
+          "vi": "Material Request"
+        }
+      },
+      {
+        "from": "purchasing",
+        "to": "inventory",
+        "label": {
+          "en": "Purchase Receipt",
+          "vi": "Purchase Receipt"
+        }
+      },
+      {
+        "from": "production",
+        "to": "inventory",
+        "label": {
+          "en": "Stock Entry",
+          "vi": "Stock Entry"
+        }
+      },
+      {
+        "from": "inventory",
+        "to": "logistics",
+        "label": {
+          "en": "Delivery Note",
+          "vi": "Delivery Note"
+        }
+      },
+      {
+        "from": "production",
+        "to": "reporting"
+      },
+      {
+        "from": "inventory",
+        "to": "reporting"
+      }
+    ]
+  }
+}

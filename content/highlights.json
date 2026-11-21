@@ -1,0 +1,42 @@
+[
+  {
+    "value": "{years}+",
+    "label": {
+      "en": "Years",
+      "vi": "Năm"
+    },
+    "description": {
+      "en": "Working in software and ERP development since January 2021.",
+      "vi": "Kinh nghiệm làm việc trong lĩnh vực phát triển phần mềm và ERP từ tháng 01/2021."
+    }
+  },
+  {
+    "value": "{companies}",
+    "label": {
+      "en": "Companies",
+      "vi": "Công ty"
+    },
+    "description": {
+      "en": "BnK Solution · Lotusa · NXCOM · Vinatex.",
+      "vi": "BnK Solution · Lotusa · NXCOM · Vinatex."
+    }
+  },
+  {
+    "value": "400+",
+    "label": {
+      "en": "Personnel",
+      "vi": "Nhân sự"
+    },
+    "description": {
+      "en": "Headcount of the organization in the Helencare ERP project — not the number of system users.",
+      "vi": "Quy mô nhân sự của tổ chức trong dự án Helencare ERP — không phải số người dùng hệ thống."
+    }
+  },
+  {
+    "value": "ERPNext & Odoo",
+    "description": {
+      "en": "Experience building systems on two ERP platforms.",
+      "vi": "Kinh nghiệm phát triển hệ thống trên hai nền tảng ERP."
+    }
+  }
+]

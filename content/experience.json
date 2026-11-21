@@ -1,0 +1,131 @@
+[
+  {
+    "id": "vinatex",
+    "company": {
+      "en": "Vietnam National Textile and Garment Group",
+      "vi": "Tập đoàn Dệt may Việt Nam"
+    },
+    "shortName": "Vinatex",
+    "position": "ERPNext Developer",
+    "start": "2025-08",
+    "end": null,
+    "responsibilities": {
+      "en": [
+        "Developing ERPNext features for the HRM system.",
+        "Customizing the user interface.",
+        "Developing the E-Office system.",
+        "Building management reporting dashboards.",
+        "Integrating APIs between the ERP and external software.",
+        "Contributing to mobile app development.",
+        "System administration and operations."
+      ],
+      "vi": [
+        "Lập trình ERPNext cho hệ thống HRM.",
+        "Tùy chỉnh giao diện người dùng.",
+        "Phát triển hệ thống E-Office.",
+        "Xây dựng dashboard báo cáo quản trị.",
+        "Tích hợp API giữa ERP và phần mềm bên ngoài.",
+        "Tham gia phát triển ứng dụng di động.",
+        "Quản trị và vận hành hệ thống."
+      ]
+    },
+    "technologies": [],
+    "projects": [
+      "vhrm",
+      "hrmsnd",
+      "water-infrastructure"
+    ]
+  },
+  {
+    "id": "nxcom",
+    "company": {
+      "en": "NXCOM Technology Joint Stock Company",
+      "vi": "Công ty Cổ phần Công nghệ NXCOM"
+    },
+    "shortName": "NXCOM",
+    "position": "ERPNext Consultant",
+    "start": "2023-07",
+    "end": "2025-08",
+    "responsibilities": {
+      "en": [
+        "Customized the ERP system and analyzed business processes.",
+        "Developed manufacturing, inventory, purchasing, sales and logistics features.",
+        "Designed workflows.",
+        "Integrated APIs.",
+        "Data migration.",
+        "Trained users."
+      ],
+      "vi": [
+        "Tùy chỉnh hệ thống ERP và phân tích quy trình nghiệp vụ.",
+        "Phát triển nghiệp vụ Sản xuất, Kho, Mua hàng, Bán hàng và Logistics.",
+        "Thiết kế Workflow.",
+        "Tích hợp API.",
+        "Chuyển đổi dữ liệu (data migration).",
+        "Đào tạo người dùng."
+      ]
+    },
+    "technologies": [],
+    "projects": [
+      "eup-group",
+      "ybm-erp"
+    ]
+  },
+  {
+    "id": "lotusa",
+    "company": {
+      "en": "Lotusa Technology Solutions Joint Stock Company",
+      "vi": "Công ty Cổ phần Giải pháp Công nghệ Lotusa"
+    },
+    "shortName": "Lotusa",
+    "position": "ERPNext Developer",
+    "start": "2022-01",
+    "end": "2023-07",
+    "responsibilities": {
+      "en": [
+        "Managed the ERP implementation project.",
+        "Customized ERPNext.",
+        "Designed the database.",
+        "Developed manufacturing, MRP, inventory, CRM and HR features.",
+        "Integrated APIs."
+      ],
+      "vi": [
+        "Quản lý triển khai dự án ERP.",
+        "Tùy chỉnh ERPNext.",
+        "Thiết kế database.",
+        "Phát triển nghiệp vụ Sản xuất, MRP, Kho, CRM và Nhân sự.",
+        "Tích hợp API."
+      ]
+    },
+    "technologies": [],
+    "projects": [
+      "helencare"
+    ]
+  },
+  {
+    "id": "bnk-solution",
+    "company": {
+      "en": "BnK Solution",
+      "vi": "BnK Solution"
+    },
+    "shortName": "BnK Solution",
+    "position": "Developer",
+    "start": "2021-01",
+    "end": "2022-01",
+    "responsibilities": {
+      "en": [
+        "Developed Odoo features for CRM, HR, Sales Orders and POS.",
+        "Wrote automation scripts.",
+        "Supported operations, maintenance and system upgrades."
+      ],
+      "vi": [
+        "Phát triển chức năng trên Odoo cho CRM, Nhân sự, Sales Order và POS.",
+        "Viết script tự động hóa.",
+        "Hỗ trợ vận hành, bảo trì và nâng cấp hệ thống."
+      ]
+    },
+    "technologies": [],
+    "projects": [
+      "hbg-erp"
+    ]
+  }
+]
