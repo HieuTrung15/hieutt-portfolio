@@ -119,6 +119,15 @@ const en = {
     outside: "Outside of work, I love:",
     illustration: "Illustration: a developer workspace with code and ERP dashboards",
   },
+  github: {
+    summary: (total: number, days: number) => `${total} contributions in the last 12 months · ${days} active days`,
+    less: "Less",
+    more: "More",
+    day: (count: number, date: string) =>
+      count === 0 ? `No contributions on ${date}` : `${count} contribution${count === 1 ? "" : "s"} on ${date}`,
+    viewProfile: "View on GitHub",
+    graphLabel: (total: number) => `Contribution graph: ${total} contributions over the last 12 months`,
+  },
   projects: {
     intro: "Each project has its own case study: context, responsibilities, functional modules, technologies and an interactive system diagram.",
     metaDescription: (name: string) =>
@@ -245,6 +254,14 @@ const vi: Dict = {
     current: (position: string, company: string) => `Hiện tôi đang làm *${position}* tại *${company}*.`,
     outside: "Ngoài công việc, tôi thích:",
     illustration: "Minh họa: góc làm việc của lập trình viên với mã nguồn và dashboard ERP",
+  },
+  github: {
+    summary: (total: number, days: number) => `${total} đóng góp trong 12 tháng qua · ${days} ngày hoạt động`,
+    less: "Ít",
+    more: "Nhiều",
+    day: (count: number, date: string) => (count === 0 ? `Không có đóng góp ngày ${date}` : `${count} đóng góp ngày ${date}`),
+    viewProfile: "Xem trên GitHub",
+    graphLabel: (total: number) => `Biểu đồ đóng góp: ${total} lượt trong 12 tháng qua`,
   },
   projects: {
     intro: "Mỗi dự án có trang case study riêng: bối cảnh, trách nhiệm, phân hệ chức năng, công nghệ và sơ đồ hệ thống tương tác.",

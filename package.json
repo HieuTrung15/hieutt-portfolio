@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && node tools/fix-windows-export.ts && node tools/cloudflare-headers.ts",
-    "deploy:cloudflare": "npm run build && npx --yes wrangler@4 pages deploy --branch main",
+    "sync:github": "node tools/fetch-github-contributions.ts",
+    "deploy:cloudflare": "npm run sync:github && npm run build && npx --yes wrangler@4 pages deploy --branch main",
     "preview": "node tools/preview.ts",
     "studio": "node tools/content-studio/server.ts",
     "lint": "eslint",

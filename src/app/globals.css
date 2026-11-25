@@ -18,6 +18,14 @@
   /* Darker accent on light backgrounds so green text stays readable (AA). */
   --brand-ink: color-mix(in oklab, var(--brand) 58%, #000);
   --brand-soft: color-mix(in oklab, var(--brand) 12%, white);
+  /* GitHub contribution heatmap, five steps. Derived from --brand so the graph belongs to this
+     palette rather than pasting GitHub's green onto the page. Level 4 is the deeper accent: the
+     raw brand green burns out on white. */
+  --gh-0: color-mix(in oklab, #000 5%, var(--card));
+  --gh-1: color-mix(in oklab, var(--brand) 30%, white);
+  --gh-2: color-mix(in oklab, var(--brand) 55%, white);
+  --gh-3: color-mix(in oklab, var(--brand) 80%, white);
+  --gh-4: #08843f;
   --background: #ffffff;
   --background-alt: #f1f7f5;
   --bg-gradient: linear-gradient(270deg, #ffffff, #eef8f3);
@@ -40,6 +48,12 @@
 .dark {
   --brand-ink: var(--brand);
   --brand-soft: color-mix(in oklab, var(--brand) 14%, #0b1620);
+  /* Same five steps against the navy card; level 4 is the brand green at full strength. */
+  --gh-0: color-mix(in oklab, #fff 6%, var(--card));
+  --gh-1: color-mix(in oklab, var(--brand) 25%, var(--card));
+  --gh-2: color-mix(in oklab, var(--brand) 45%, var(--card));
+  --gh-3: color-mix(in oklab, var(--brand) 70%, var(--card));
+  --gh-4: var(--brand);
   --background: #0b1620;
   --background-alt: #0f1d2a;
   --bg-gradient: linear-gradient(270deg, #0b1620, #08111a);

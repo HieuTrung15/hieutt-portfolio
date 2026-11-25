@@ -5,6 +5,7 @@ import { Accent } from "@/components/accent";
 import { Education } from "@/components/sections/education";
 import { Experience } from "@/components/sections/experience";
 import { Expertise } from "@/components/sections/expertise";
+import { GithubContributions } from "@/components/sections/github-contributions";
 import { HeroArt } from "@/components/sections/hero-art";
 import { getContent } from "@/lib/content";
 import { currentExperience } from "@/lib/content/derive";
@@ -71,6 +72,8 @@ export function AboutPage({ locale }: { locale: Locale }) {
 
       {sectionsOn(c, "/about").map((s) => {
         switch (s.id) {
+          case "github":
+            return <GithubContributions key={s.id} c={c} section={s} />;
           case "expertise":
             return <Expertise key={s.id} c={c} section={s} />;
           case "experience":

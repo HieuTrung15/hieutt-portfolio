@@ -15,6 +15,7 @@ export const SECTION_PAGE: Record<SectionId, "/" | "/about" | "/projects"> = {
   about: "/",
   highlights: "/",
   contact: "/",
+  github: "/about",
   expertise: "/about",
   experience: "/about",
   education: "/about",

@@ -25,6 +25,10 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      # Refreshes src/data/github-contributions.json so the deployed heatmap is current.
+      # Never fails the job: the script exits 0 and keeps the committed snapshot on any error.
+      - name: Refresh GitHub contributions
+        run: node tools/fetch-github-contributions.ts
       - run: pnpm build
       - run: pnpm typecheck
       - run: pnpm lint

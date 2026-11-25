@@ -79,6 +79,18 @@
       "visible": true
     },
     {
+      "id": "github",
+      "label": {
+        "en": "GitHub",
+        "vi": "GitHub"
+      },
+      "title": {
+        "en": "GitHub *Contributions*",
+        "vi": "Hoạt động trên *GitHub*"
+      },
+      "visible": true
+    },
+    {
       "id": "expertise",
       "label": {
         "en": "Expertise",

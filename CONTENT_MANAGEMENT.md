@@ -130,6 +130,26 @@ Liên kết được khai báo **trong dự án**: Studio → Dự án → chọ
 
 Studio → **Social links**, hoặc `content/social-links.json` (dùng chung cho hai ngôn ngữ). Điền URL `https://…` cho GitHub/LinkedIn/Website. URL trống ⇒ liên kết tự ẩn. Thêm loại khác bằng **+ Thêm mục** (loại `other`).
 
+### Heatmap GitHub Contributions
+
+Lưới đóng góp 12 tháng gần nhất trên trang About, ngay trước *Professional Skillset*.
+
+- **Dữ liệu**: `src/data/github-contributions.json` là **file sinh ra tự động — đừng sửa tay**.
+  Mọi thay đổi bằng tay sẽ bị ghi đè ở lần đồng bộ sau.
+- **Làm mới**: `pnpm sync:github`. CI cũng tự chạy trước mỗi lần deploy, nên website luôn hiện số
+  liệu mới nhất mà không cần bạn làm gì.
+- **Tài khoản nào**: lấy từ URL GitHub trong **Social links**. Đổi URL đó là đổi luôn heatmap.
+- **Tắt đi**: Studio → *Cài đặt website* → *Các section* → bỏ tích **Hiển thị** ở section `github`.
+- **Số liệu gồm cả private**: con số chỉ đúng khi bật *Private contributions* trong GitHub →
+  *Contribution settings*. Tắt đi thì heatmap chỉ còn các đóng góp công khai.
+
+Hai giới hạn đã biết và chấp nhận:
+
+- Bản xem thử ở máy (`pnpm preview`) hiển thị snapshot đã commit, nên có thể cũ hơn website thật.
+  Chạy `pnpm sync:github` trước nếu muốn xem số mới.
+- Nếu file dữ liệu không có, section tự biến mất khỏi trang — nhưng ô tìm kiếm (`Ctrl/⌘ K`) vẫn
+  còn mục "GitHub". Trường hợp này chỉ xảy ra khi checkout thiếu file.
+
 ### Thay đổi màu sắc và cài đặt website
 
 Studio → **Cài đặt website**:
@@ -137,7 +157,7 @@ Studio → **Cài đặt website**:
 - **Màu nhấn (accent)**: chọn màu; toàn bộ highlight, liên kết, sơ đồ dùng màu này.
 - **Logo text**, **Tiêu đề / mô tả SEO**, **Domain production**.
 - **Nhãn menu (navbar)**: Home / About / Projects / Resume cho từng ngôn ngữ.
-- **Các section**: đổi tiêu đề, mô tả; bỏ tích *Hiển thị* để ẩn; dùng ↑ ↓ để đổi thứ tự trong trang. Bọc một từ trong `*dấu sao*` để tô màu nhấn (vd `Professional *Skillset*`). Section thuộc trang: Home = `home`, `about`, `highlights`, `contact`; About = `expertise`, `experience`, `education`; Projects = `work` (tiêu đề/mô tả của trang).
+- **Các section**: đổi tiêu đề, mô tả; bỏ tích *Hiển thị* để ẩn; dùng ↑ ↓ để đổi thứ tự trong trang. Bọc một từ trong `*dấu sao*` để tô màu nhấn (vd `Professional *Skillset*`). Section thuộc trang: Home = `home`, `about`, `highlights`, `contact`; About = `github`, `expertise`, `experience`, `education`; Projects = `work` (tiêu đề/mô tả của trang).
 - **Danh mục dự án**: tên các bộ lọc ở trang Projects (danh mục không có dự án sẽ tự ẩn).
 - **File CV (PDF)**: tải PDF lên ⇒ nút "Tải CV" xuất hiện ở Hero, Contact và trang Hồ sơ. Để trống ⇒ nút bị ẩn.
 

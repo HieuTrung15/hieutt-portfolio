@@ -42,7 +42,7 @@ const localizedList = (title: string, description?: string) =>
     .default({ en: [], vi: [] })
     .meta({ title, description, widget: "localized-list" });
 
-export const SECTION_IDS = ["home", "highlights", "work", "expertise", "experience", "about", "education", "contact"] as const;
+export const SECTION_IDS = ["home", "highlights", "work", "github", "expertise", "experience", "about", "education", "contact"] as const;
 
 export const SiteSchema = z.object({
   title: localized("Tiêu đề website (SEO)"),

@@ -102,3 +102,31 @@ test("deploy output: absolute URLs for the configured domain and Cloudflare head
     assert.ok(headers.includes(`${route}\n  Content-Type: image/png`), `missing PNG header for ${route}`);
   }
 });
+
+test("the GitHub heatmap renders on both About pages", { skip }, () => {
+  const content = loadContent(process.cwd());
+  const section = content.site.sections.find((s) => s.id === "github");
+  const data = path.join(process.cwd(), "src/data/github-contributions.json");
+  if (!section?.visible || !fs.existsSync(data)) return;
+  const { total } = JSON.parse(fs.readFileSync(data, "utf8"));
+  // The total is asserted inside its own sentence, per language: a bare "629" would also match a
+  // build hash, and an absent id makes indexOf return -1, which would order itself first for free.
+  const expected = {
+    "about.html": `${total} contributions in the last 12 months`,
+    "vi/about.html": `${total} đóng góp trong 12 tháng qua`,
+  };
+  // Per-day tooltips follow each language's house date convention: month name in English
+  // (like "Aug 2025" elsewhere), numeric in Vietnamese (like "08/2025"). Matched as a shape, not a
+  // fixed day — the 12-month window slides, so any named date would expire.
+  const tooltip = { "about.html": /on [A-Z][a-z]{2} \d{1,2}, \d{4}/, "vi/about.html": /ngày \d{2}\/\d{2}\/\d{4}/ };
+  for (const [page, sentence] of Object.entries(expected)) {
+    const html = fs.readFileSync(path.join(out, page), "utf8");
+    const heatmap = html.indexOf('id="github"');
+    const skillset = html.indexOf('id="expertise"');
+    assert.ok(heatmap >= 0, `${page}: không thấy section heatmap`);
+    assert.ok(skillset >= 0, `${page}: không thấy section Skillset`);
+    assert.ok(heatmap < skillset, `${page}: heatmap phải nằm trước Skillset`);
+    assert.ok(html.includes(sentence), `${page}: thiếu câu tổng đúng ngôn ngữ — "${sentence}"`);
+    assert.match(html, tooltip[page as keyof typeof tooltip], `${page}: tooltip sai quy ước ngày của ngôn ngữ này`);
+  }
+});

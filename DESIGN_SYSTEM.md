@@ -21,6 +21,7 @@
 | `--primary` | `#1062DD` | `#1062DD` | Màu nền dự phòng dưới `--primary-gradient` |
 | `--footer` | `#050c12` | `#e8f4ef` | Footer |
 | `--nav-scrolled` | `rgba(11,22,32,.72)` + blur 15px | `rgba(255,255,255,.85)` | Navbar khi cuộn |
+| `--gh-0` … `--gh-4` | `#fff` 6% trên card → `--brand` | `#000` 5% trên card → `#08843F` | 5 mức đậm nhạt của heatmap GitHub, trộn từ `--brand` bằng `color-mix` |
 | `--glow` / `--glow-strong` | bóng xanh dương / hover bóng xanh lá | bóng nhẹ cùng tông | Card phát sáng |
 | `--star` | trắng | xanh dương | Màu sao trên canvas |
 
@@ -38,7 +39,7 @@ Trang Resume luôn là "tờ giấy trắng" (chữ xám đậm, tiêu đề m�
 
 - **Navbar** cố định trên cùng: logo `TH.` (màu nhấn, đậm) · Home / About / Projects / Resume (icon + gạch chân gradient xanh lá → xanh dương chạy ra khi hover/trang hiện tại) · tìm kiếm (`Ctrl/⌘ K`) · EN|VI · sáng/tối. Trong suốt ở đầu trang, mờ + đổ bóng khi cuộn. Dưới `lg`: nút hamburger 3 vạch màu nhấn (chuyển thành ✕), menu xổ xuống căn giữa.
 - **Home**: Hero 2 cột (lời chào + vẫy tay, "I'M <TÊN>", vai trò gõ chữ, minh họa SVG) → "Let me *introduce* myself" (thông điệp + giới thiệu, avatar tròn nghiêng nhẹ khi hover) → Highlights (4 card phát sáng) → "Find Me On" (nút tròn trắng).
-- **About**: "Beyond the *Code*" (câu chào tự sinh từ dữ liệu, giới thiệu đầy đủ, sở thích có icon chỉ tay, câu trích dẫn) + minh họa → Skillset (pill bo tròn theo nhóm, có icon nhóm) → Career Journey (timeline card phát sáng) → Education.
+- **About**: "Beyond the *Code*" (câu chào tự sinh từ dữ liệu, giới thiệu đầy đủ, sở thích có icon chỉ tay, câu trích dẫn) + minh họa → GitHub Contributions (heatmap 12 tháng gần nhất) → Skillset (pill bo tròn theo nhóm, có icon nhóm) → Career Journey (timeline card phát sáng) → Education.
 - **Projects**: tiêu đề + bộ lọc dạng pill + ô tìm kiếm bo tròn → lưới 3 cột card (khung laptop chứa minh họa, tiêu đề giữa, mô tả căn đều, nút gradient) → Interactive System Explorer.
 - **Resume**: nút Download CV (nếu có PDF) hoặc In / Lưu PDF, tờ CV trắng ở giữa.
 - **Footer** 3 cột: "Designed and Developed by …" · Copyright · icon liên hệ.
@@ -69,6 +70,16 @@ Chuyển động: sao trôi/lấp lánh, tay vẫy, con trỏ nhấp nháy, chip
 - Lighthouse Accessibility 100 ở các trang chính (đo ngày build).
 
 ## Lịch sử thay đổi
+
+### 2026-11-25: Thêm heatmap GitHub Contributions vào trang About
+
+Lưới đóng góp 12 tháng gần nhất, đặt trước "Professional Skillset". Dữ liệu lấy lúc build từ trang
+profile GitHub công khai (không token) và lưu ở `src/data/github-contributions.json` — xem
+`CONTENT_MANAGEMENT.md`. Thêm 5 token màu `--gh-0`…`--gh-4` trộn từ `--brand`, nên heatmap thuộc
+bảng màu của site chứ không dùng màu xanh gốc của GitHub. Không có JS phía client: tooltip dùng
+thuộc tính `title`, và dưới `lg` khung lưới cuộn ngang với `direction: rtl` để mở sẵn ở tuần gần
+nhất. Lưới là một phần tử `role="img"`; con số tổng là chữ thật nên trình đọc màn hình không phải
+duyệt 368 ô.
 
 ### 2026-11-21: Đổi tông màu và font theo Vietapp
 
