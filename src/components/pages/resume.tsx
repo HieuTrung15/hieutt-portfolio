@@ -1,4 +1,4 @@
-import { Globe, Mail, MapPin } from "lucide-react";
+import { Download, Globe, Mail, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
@@ -6,7 +6,6 @@ import { SocialIcon } from "@/components/layout/social-icon";
 import { getContent, getCvHref, getProjects, getSiteUrl, visibleSocialLinks } from "@/lib/content";
 import { formatRange, projectPeriod } from "@/lib/content/derive";
 import { t, type Locale } from "@/lib/i18n";
-import { ResumeAction } from "./resume-actions";
 import { alternates, siteOgImages } from "./shared";
 
 export function resumeMetadata(locale: Locale): Metadata {
@@ -25,8 +24,8 @@ const ACCENT = "#08843f";
 /** Section title styled like a typeset CV: first letters in the accent colour, rule to the right. */
 function PaperSection({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <section className="mt-9">
-      <h2 className="flex items-end gap-3 text-[1.55rem] leading-none font-bold text-[#333]">
+    <section className="mt-9 print:mt-6">
+      <h2 className="flex items-end gap-3 text-[1.55rem] leading-none font-bold text-[#333] print:break-after-avoid">
         <span className="shrink-0">
           <span style={{ color: ACCENT }}>{title.slice(0, 3)}</span>
           {title.slice(3)}
@@ -40,7 +39,7 @@ function PaperSection({ title, children }: { title: string; children: ReactNode 
 
 function Entry({ title, aside, sub, period, bullets }: { title: string; aside?: string; sub?: string; period?: string; bullets: string[] }) {
   return (
-    <div className="mt-5 break-inside-avoid">
+    <div className="mt-5 break-inside-avoid print:mt-3">
       <div className="flex flex-wrap items-baseline justify-between gap-x-4">
         <h3 className="text-[1.08rem] font-bold text-[#333]">{title}</h3>
         {aside && (
@@ -70,16 +69,25 @@ function Entry({ title, aside, sub, period, bullets }: { title: string; aside?: 
 export function ResumePage({ locale }: { locale: Locale }) {
   const c = getContent(locale);
   const dict = t(locale).resume;
-  const cvHref = getCvHref(c);
+  // shortcut: bundled PDFs are snapshots, re-export them when the résumé content changes.
+  const cvHref = getCvHref(c) ?? `/cv/tran-trung-hieu-cv-${locale}.pdf`;
   const url = getSiteUrl(c);
   const words = c.profile.name.split(/\s+/);
   const groups = c.skills.groups
     .map((g) => ({ title: g.title, skills: c.skills.skills.filter((s) => s.group === g.id && s.visible).map((s) => s.name) }))
     .filter((g) => g.skills.length);
-  const action = <ResumeAction cvHref={cvHref} downloadLabel={dict.download} printLabel={dict.print} />;
+  const action = (
+    <a
+      href={cvHref}
+      download
+      className="inline-flex min-w-[250px] cursor-pointer items-center justify-center gap-2 rounded-md bg-primary bg-primary-gradient px-6 py-2.5 text-primary-foreground transition hover:brightness-110"
+    >
+      <Download className="size-4" aria-hidden /> {dict.download}
+    </a>
+  );
 
   return (
-    <div className="mx-auto max-w-[1100px] px-3 py-10 sm:px-8">
+    <div className="mx-auto max-w-[1100px] px-3 py-10 sm:px-8 print:p-0">
       <h1 className="sr-only">
         {c.site.pageLabels.resume} — {c.profile.name}
       </h1>

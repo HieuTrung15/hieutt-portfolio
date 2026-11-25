@@ -65,7 +65,7 @@ Nên chạy `pnpm build` trước `pnpm test` để các test kiểm tra thư m�
 
 - `/` (và `/vi`) — Hero (lời chào, tên, vai trò gõ chữ, minh họa SVG), Let me introduce myself, Professional Highlights (số năm kinh nghiệm và số công ty **tự tính** từ dữ liệu), Find Me On.
 - `/about` — Beyond the Code (giới thiệu đầy đủ, sở thích, trích dẫn), Professional Skillset (chọn kỹ năng → dự án liên quan), Career Journey (timeline), Education.
-- `/resume` — CV dạng tờ giấy trắng dựng từ dữ liệu; nút **Download CV** khi có PDF, nếu không thì **Print / Save as PDF**.
+- `/resume` và `/vi/resume` — CV dạng tờ giấy trắng dựng từ dữ liệu, có nút **Download** / **Tải về** để tải PDF trực tiếp.
 - Tiêu đề, thứ tự, ẩn/hiện các section và nhãn menu đều cấu hình trong `content/site.json`.
 - `/projects` — **My Recent Works**: bộ lọc danh mục sinh từ dữ liệu (chỉ hiện danh mục có dự án), tìm kiếm theo tên, tổ chức, công nghệ, lĩnh vực (không phân biệt dấu tiếng Việt), empty state.
 - `/projects/[slug]` — Case study: breadcrumb, meta, hình minh họa sinh từ dữ liệu, Bối cảnh (Markdown), Trách nhiệm phân loại (trực tiếp phát triển / cùng nhóm / quản lý triển khai / vận hành), Phân hệ, Công nghệ & kỹ năng, **Interactive System Explorer**, Kết quả & đóng góp, gallery, dự án liên quan, trước/sau, mục lục. Dự án thiếu dữ liệu hiển thị thông báo "đang bổ sung" thay vì nội dung bịa.

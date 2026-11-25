@@ -41,7 +41,7 @@ Trang Resume luôn là "tờ giấy trắng" (chữ xám đậm, tiêu đề m�
 - **Home**: Hero 2 cột (lời chào + vẫy tay, "I'M <TÊN>", vai trò gõ chữ, minh họa SVG) → "Let me *introduce* myself" (thông điệp + giới thiệu, avatar tròn nghiêng nhẹ khi hover) → Highlights (4 card phát sáng) → "Find Me On" (nút tròn trắng).
 - **About**: "Beyond the *Code*" (câu chào tự sinh từ dữ liệu, giới thiệu đầy đủ, sở thích có icon chỉ tay, câu trích dẫn) + minh họa → GitHub Contributions (heatmap 12 tháng gần nhất) → Skillset (pill bo tròn theo nhóm, có icon nhóm) → Career Journey (timeline card phát sáng) → Education.
 - **Projects**: tiêu đề + bộ lọc dạng pill + ô tìm kiếm bo tròn → lưới 3 cột card (khung laptop chứa minh họa, tiêu đề giữa, mô tả căn đều, nút gradient) → Interactive System Explorer.
-- **Resume**: nút Download CV (nếu có PDF) hoặc In / Lưu PDF, tờ CV trắng ở giữa.
+- **Resume**: nút **Download** / **Tải về** với biểu tượng tải xuống, tờ CV trắng ở giữa.
 - **Footer** 3 cột: "Designed and Developed by …" · Copyright · icon liên hệ.
 - Nội dung tối đa 1320px; khoảng đệm 24–40px.
 

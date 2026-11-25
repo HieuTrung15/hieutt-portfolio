@@ -58,7 +58,7 @@ export const SiteSchema = z.object({
     .regex(/^#[0-9a-fA-F]{6}$/, "Mã màu hex 6 ký tự, vd: #2563EB")
     .default("#2563EB")
     .meta({ title: "Màu nhấn (accent)", widget: "color" }),
-  cvPath: publicPath("File CV (PDF)", "pdf", "Để trống để ẩn nút Tải CV. File phải nằm trong public/ và có đuôi .pdf"),
+  cvPath: publicPath("File CV (PDF)", "pdf", "Để trống để dùng PDF đi kèm trên trang Hồ sơ. File riêng phải nằm trong public/ và có đuôi .pdf"),
   pageLabels: z
     .object({
       home: localized("Nhãn trang Home"),

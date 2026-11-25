@@ -336,9 +336,14 @@
   body {
     background: #fff !important;
   }
+  #main:has(.resume-paper) {
+    min-height: 0;
+    padding-top: 0;
+  }
   .resume-paper {
     box-shadow: none !important;
     margin: 0 !important;
     max-width: none !important;
+    padding: 0 !important;
   }
 }

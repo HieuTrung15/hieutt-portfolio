@@ -40,6 +40,20 @@ test("no broken internal links", { skip }, () => {
   assert.deepEqual([...broken], []);
 });
 
+test("both résumé pages have two links that download a PDF", { skip }, () => {
+  for (const [page, label] of [["resume.html", "Download"], ["vi/resume.html", "Tải về"]]) {
+    const html = fs.readFileSync(path.join(out, page), "utf8");
+    const links = [...html.matchAll(/<a href="(\/[^"\n]+)" download=""[^>]*>(.*?)<\/a>/g)]
+      .filter(([, , content]) => content.endsWith(label));
+    assert.equal(links.length, 2, page);
+    for (const [, href] of links) {
+      assert.match(href, /\.pdf$/i);
+      const file = fs.readFileSync(path.join(out, decodeURIComponent(href)));
+      assert.equal(file.subarray(0, 5).toString(), "%PDF-", href);
+    }
+  }
+});
+
 test("English is the default at / and every page boots the language script in <head>", { skip }, () => {
   const home = fs.readFileSync(path.join(out, "index.html"), "utf8");
   const viHome = fs.readFileSync(path.join(out, "vi.html"), "utf8");

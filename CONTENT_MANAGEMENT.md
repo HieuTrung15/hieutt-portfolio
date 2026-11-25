@@ -159,7 +159,8 @@ Studio → **Cài đặt website**:
 - **Nhãn menu (navbar)**: Home / About / Projects / Resume cho từng ngôn ngữ.
 - **Các section**: đổi tiêu đề, mô tả; bỏ tích *Hiển thị* để ẩn; dùng ↑ ↓ để đổi thứ tự trong trang. Bọc một từ trong `*dấu sao*` để tô màu nhấn (vd `Professional *Skillset*`). Section thuộc trang: Home = `home`, `about`, `highlights`, `contact`; About = `github`, `expertise`, `experience`, `education`; Projects = `work` (tiêu đề/mô tả của trang).
 - **Danh mục dự án**: tên các bộ lọc ở trang Projects (danh mục không có dự án sẽ tự ẩn).
-- **File CV (PDF)**: tải PDF lên ⇒ nút "Tải CV" xuất hiện ở Hero, Contact và trang Hồ sơ. Để trống ⇒ nút bị ẩn.
+- **File CV (PDF)**: PDF tải lên xuất hiện ở Hero, Contact và được dùng làm file tải về ở cả hai trang Hồ sơ. Khi để trống, mỗi trang Hồ sơ tải bản PDF đi kèm đúng ngôn ngữ.
+  - Để cập nhật PDF đi kèm, chạy `pnpm build` rồi `pnpm preview` và mở `/resume` và `/vi/resume`. Dùng **In → Lưu dưới dạng PDF** (khổ A4, lề 10 mm, tắt đầu trang và chân trang) để ghi đè `public/cv/tran-trung-hieu-cv-en.pdf` và `public/cv/tran-trung-hieu-cv-vi.pdf` tương ứng. Chạy lại `pnpm build` để đưa các file mới vào bản triển khai.
 
 Màu nền, chữ, viền… nằm trong `src/app/globals.css` (xem DESIGN_SYSTEM.md).
 

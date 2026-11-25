@@ -186,8 +186,7 @@ const en = {
   },
   resume: {
     metaDescription: (name: string) => `Résumé of ${name}: work experience, projects, technical skills and education.`,
-    download: "Download CV",
-    print: "Print / Save as PDF",
+    download: "Download",
     work: "Work Experience",
     projects: "Projects",
     skills: "Technical Skills",
@@ -321,8 +320,7 @@ const vi: Dict = {
   },
   resume: {
     metaDescription: (name: string) => `Hồ sơ CV của ${name}: kinh nghiệm làm việc, dự án, kỹ năng chuyên môn và học vấn.`,
-    download: "Tải CV",
-    print: "In / Lưu PDF",
+    download: "Tải về",
     work: "Kinh nghiệm làm việc",
     projects: "Dự án",
     skills: "Kỹ năng chuyên môn",
